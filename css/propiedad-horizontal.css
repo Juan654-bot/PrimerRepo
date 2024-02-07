@@ -94,7 +94,7 @@ footer {
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
     padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
-    padding-left: 15%;
+    padding-left: 12%;
 }
 
 .columna {
