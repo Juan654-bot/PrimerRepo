@@ -50,7 +50,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding-right: 30px;
+    padding-right: 45px;
 }
 
 nav ul li:first-child {
@@ -61,6 +61,7 @@ nav ul li a {
     color: #e5e0e0;
     text-decoration: none;
     font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
+    font-size: 0.95em; /* Tamaño de fuente para los links */
 }
 
 /* Estilos para el contenido principal */
