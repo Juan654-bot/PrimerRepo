@@ -111,7 +111,7 @@ main {
 #section2 p {
     color: #333333e8; /* Cambia el color del texto a azul */
     font-size: 19px; /* Ajusta el tamaño de la fuente a 16px */
-    padding-top: 10px;
+    padding-top: 2px;
     padding-left: 2.5%;
     padding-right: 5.5%;
 }
@@ -155,11 +155,11 @@ footer {
 
 .columna {
     flex: 1;
-    margin-right: 5px; /* Espacio entre columnas */
+    margin-left: 0%; /* Espacio entre columnas */
 }
 
 .columna:last-child {
-    margin-right: 0; /* Elimina el margen derecho de la última columna */
+    margin-left: ; /* Elimina el margen derecho de la última columna */
 }
 
 h3 {
@@ -182,12 +182,10 @@ ul li a {
 }
 
 ul li a:hover {
-    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+    text-decoration: none; /* Subraya el enlace al pasar el cursor */
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
 }
 
 .special {
     padding-top: 55px;
 }
-
-
-
