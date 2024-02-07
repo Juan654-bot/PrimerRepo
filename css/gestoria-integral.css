@@ -7,7 +7,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 15px;
+    padding: 17.5px;
     display: flex; /* Usa flexbox para alinear elementos */
     justify-content: space-between; /* Distribuye los elementos en el espacio restante */
     align-items: center; /* Centra verticalmente los elementos */

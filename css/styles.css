@@ -6,7 +6,7 @@ body {
 header {
     background-color: #333;
     color: #e5e0e0;
-    padding: 15px;
+    padding: 17.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +74,7 @@ main {
 }
 
 #section1 {
-    height: 615px;
+    height: 610px;
     background-image: url('../img/fondo-seccion1.jpg');
     background-size: cover;
     background-position: center;
@@ -84,7 +84,7 @@ main {
 
 #section1 .content-wrapper {
     color: #e5e0e0;
-    padding: 0px 10px; /* Añade un relleno alrededor del texto para simular un borde */
+    padding: 0px 30px; /* Añade un relleno alrededor del texto para simular un borde */
     background-color: rgba(0, 0, 0, 0.17); /* Agrega un color de fondo para el relleno */
     border-radius: 10px; /* Aplica bordes redondeados */
 }
