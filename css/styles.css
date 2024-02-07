@@ -117,6 +117,9 @@ main {
 
 h6 {
     color: #333333e8; /* Cambia el color del texto a azul */
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 17px; /* Ajusta el tamaño de la fuente a 16px */
 }
 
 #section3 {
