@@ -68,28 +68,49 @@ main {
 }
 
 #section2 {
+    height: 300px;
     background-image: url('../img/fondo-seccion2.jpg');
     background-size: cover;
     background-position: center;
-    padding-left: 5%;
-    padding-right: 50%;
+    display: block; /* Cambia la visualización a bloque para que ocupen toda la anchura disponible */
+    padding-top: 100px;
+    padding-left: 50%;
+    padding-right: 5%;
 }
 
 #section3 {
+    height: 650px;
     background-image: url('../img/fondo-seccion3.jpg');
     background-size: cover;
     background-position: center;
     display: block; /* Cambia la visualización a bloque para que ocupen toda la anchura disponible */
-    padding-top: 900px;
-    padding-left: 50%;
-    padding-right: 5%;
-    color: #d1c7c7;
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 50%;
+    color: #100f0f;
 }
 
 /* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 5px;
-    text-align: center;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos alineándolos en los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+footer p {
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+footer a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto del elemento padre (footer) */
+}
+
+footer .copyright {
+    text-align: right; /* Alinea el texto a la derecha */
 }
