@@ -37,34 +37,30 @@ header h1 a {
     padding-left: 7px;
 }
 
-/* Estilos para la navegación */
 nav {
-    text-align: right; /* Alinea los enlaces a la derecha */
-    padding-right: 5%;
+    text-align: right;
+    padding-right: 3%;
 }
 
-/* Estilos para la lista de navegación */
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 11px;
 }
 
-/* Estilos para los enlaces de navegación */
 nav ul li {
     display: inline;
-    margin-left: 20px; /* Espaciado entre los enlaces */
+    padding-right: 30px;
 }
 
-/* Estilos para los enlaces de navegación */
 nav ul li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer enlace */
+    margin-left: 0;
 }
 
-/* Estilos para los enlaces de navegación */
 nav ul li a {
-    color: #fff;
+    color: #e5e0e0;
     text-decoration: none;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
 }
 
 /* Estilos para el contenido principal */
@@ -73,16 +69,65 @@ main {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #1d1b1b;
+    color: #333;
     text-align: left;
     padding-top: 150px;
     padding-left: 10%;
+    padding-right: 15%;
+}
+
+.text-container {
+    background-color: rgba(188, 188, 188, 0.286); /* Agrega un color de fondo para el relleno */
+    border-radius: 5px; /* Aplica bordes redondeados */
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
 }
 
 /* Estilos para el pie de página */
 footer {
+    height: 300px;
     background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    color: #e5e0e0;
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+    padding-left: 15%;
+}
+
+.columna {
+    flex: 1;
+    margin-right: 5px; /* Espacio entre columnas */
+}
+
+.columna:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última columna */
+}
+
+h3 {
+    font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 30px; /* Espacio entre elementos de lista */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e5e0e0; /* Color de enlace */
+    font-size: 1.05em; /* Tamaño de fuente para los enlaces */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
+.special {
+    padding-top: 55px;
 }
