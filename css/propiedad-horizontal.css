@@ -126,7 +126,8 @@ ul li a {
 }
 
 ul li a:hover {
-    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+    text-decoration: none; /* Subraya el enlace al pasar el cursor */
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
 }
 
 .special {
