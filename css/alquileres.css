@@ -25,6 +25,18 @@ header h1 a {
     color: inherit; /* Hereda el color del texto del elemento padre (header h1) */
 }
 
+/* Estilos para el título principal */
+.main-title {
+    font-size: 1.3em; /* Tamaño de fuente para el título principal */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    font-size: 0.7em; /* Tamaño de fuente para el subtítulo */
+    color: #888; /* Color de texto más claro para el subtítulo */
+    padding-left: 7px;
+}
+
 /* Estilos para la navegación */
 nav {
     text-align: right; /* Alinea los enlaces a la derecha */
