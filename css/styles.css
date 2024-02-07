@@ -36,18 +36,18 @@ header h1 a {
 
 nav {
     text-align: right;
-    padding-right: 5%;
+    padding-right: 3%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 11px;
 }
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    padding-right: 30px;
 }
 
 nav ul li:first-child {
@@ -55,8 +55,9 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #e5e0e0;
     text-decoration: none;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
 }
 
 main {
@@ -68,7 +69,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #c3c2c2;
     font-size: 24px;
     text-align: center;
 }
@@ -77,25 +77,26 @@ main {
     background-image: url('../img/fondo-seccion1.jpg');
     background-size: cover;
     background-position: center;
+    padding-left: 5%;
+    padding-right: 50%;
+}
+
+#section1 .content-wrapper {
+    color: #e5e0e0;
+    padding: 0px 10px; /* Añade un relleno alrededor del texto para simular un borde */
+    background-color: rgba(0, 0, 0, 0.17); /* Agrega un color de fondo para el relleno */
+    border-radius: 10px; /* Aplica bordes redondeados */
 }
 
 #section2 {
     height: 300px;
-    background-image: url('../img/fondo-seccion2.jpg');
-    background-size: cover;
-    background-position: center;
-    display: block; /* Cambia la visualización a bloque para que ocupen toda la anchura disponible */
     padding-top: 100px;
     padding-left: 50%;
     padding-right: 5%;
 }
 
 #section3 {
-    height: 650px;
-    background-image: url('../img/fondo-seccion3.jpg');
-    background-size: cover;
-    background-position: center;
-    display: block; /* Cambia la visualización a bloque para que ocupen toda la anchura disponible */
+    height: 300px;
     padding-top: 100px;
     padding-left: 5%;
     padding-right: 50%;
@@ -106,7 +107,7 @@ main {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 25px;
+    padding: 150px;
     display: flex;
     justify-content: space-between; /* Distribuye los elementos alineándolos en los extremos */
     align-items: center; /* Alinea verticalmente los elementos */
