@@ -6,7 +6,7 @@ body {
 /* Estilos para el encabezado */
 header {
     background-color: #333;
-    color: #fff;
+    color: #e5e0e0;
     padding: 17.5px;
     display: flex; /* Usa flexbox para alinear elementos */
     justify-content: space-between; /* Distribuye los elementos en el espacio restante */

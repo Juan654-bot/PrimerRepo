@@ -104,16 +104,20 @@ main {
     margin-bottom: 50px;
     font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
     display: block;
-    background-color: rgba(0, 0, 0, 0.105); /* Agrega un color de fondo para el relleno */
+    background-color: rgba(164, 164, 164, 0.326); /* Agrega un color de fondo para el relleno */
     border-radius: 5px; /* Aplica bordes redondeados */
 }
 
 #section2 p {
-    color: ; /* Cambia el color del texto a azul */
+    color: #333333e8; /* Cambia el color del texto a azul */
     font-size: 19px; /* Ajusta el tamaño de la fuente a 16px */
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 2.5px;
+    padding-left: 2.5%;
+    padding-right: 5.5%;
+}
+
+h6 {
+    color: #333333e8; /* Cambia el color del texto a azul */
 }
 
 #section3 {
