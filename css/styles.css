@@ -130,7 +130,7 @@ h6 {
 }
 
 .imagen-izquierda {
-    width: 750px; /* Cambia el ancho de la imagen según lo necesites */
+    width: 749.05px; /* Cambia el ancho de la imagen según lo necesites */
     height: auto; /* Esto mantiene la proporción de la imagen */
     float: left; /* Hace que la imagen se alinee a la izquierda */
     margin-right: 100px; /* Añade espacio entre la imagen y el texto */
