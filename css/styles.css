@@ -1,62 +1,95 @@
 body {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos para el encabezado */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    color: #e5e0e0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Estilos para el encabezado h1 */
 header h1 {
     margin: 0;
+    padding-left: 5%;
 }
 
-/* Estilos para la navegación */
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav {
-    text-align: center;
+    text-align: right;
+    padding-right: 5%;
 }
 
-/* Estilos para la lista de navegación */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para los elementos de la lista de navegación */
 nav ul li {
     display: inline;
+    margin-left: 20px;
 }
 
-/* Estilos para los enlaces de navegación */
+nav ul li:first-child {
+    margin-left: 0;
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 20px;
-    display: inline-block; /* Para que los enlaces ocupen el mismo espacio */
 }
 
-/* Estilos para el contenido principal */
 main {
-    background-image: url('fondo_principal.jpg'); /* Cambia 'tu-imagen.jpg' por la ruta de tu imagen */
+    padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
+}
+
+.section {
+    height: 100vh; /* Establece la altura de cada sección al 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c3c2c2;
+    font-size: 24px;
+    text-align: center;
+}
+
+#section1 {
+    background-image: url('../img/fondo-seccion1.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Ajusta la altura de la imagen al 100% del viewport */
-    color: #fff; /* Color del texto sobre la imagen */
-    text-align: left;
-    padding-top: 100px; /* Ajusta el espacio superior del contenido */
-    padding-left: 10%; /* Agregar un margen a la izquierda del contenido */
+}
+
+#section2 {
+    background-image: url('../img/fondo-seccion2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 50%;
+}
+
+#section3 {
+    background-image: url('../img/fondo-seccion3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block; /* Cambia la visualización a bloque para que ocupen toda la anchura disponible */
+    padding-top: 900px;
+    padding-left: 50%;
+    padding-right: 5%;
+    color: #d1c7c7;
 }
 
 /* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
