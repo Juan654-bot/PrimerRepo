@@ -117,7 +117,7 @@ main {
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
-    background-color: rgba(164, 164, 164, 0.326); /* Agrega un color de fondo para el relleno */
+    background-color: rgba(164, 164, 164, 0.168); /* Agrega un color de fondo para el relleno */
     border-radius: 5px; /* Aplica bordes redondeados */
 }
 
