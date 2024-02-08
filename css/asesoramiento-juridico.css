@@ -104,11 +104,11 @@ footer {
 
 .columna {
     flex: 1;
-    margin-right: 5px; /* Espacio entre columnas */
+    margin-left: 0%; /* Espacio entre columnas */
 }
 
 .columna:last-child {
-    margin-right: 0; /* Elimina el margen derecho de la última columna */
+    margin-left: 5%; /* Elimina el margen derecho de la última columna */
 }
 
 h3 {

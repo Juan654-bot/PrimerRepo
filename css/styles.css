@@ -152,7 +152,8 @@ h6 {
 
 #section3 p {
     color: #333; /* Cambia el color del texto a azul */
-    font-size: 22px; /* Ajusta el tamaño de la fuente */
+    font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
     padding-top: 100px;
     padding-left: 45%;
     padding-right: 5%;
@@ -174,7 +175,7 @@ footer {
 }
 
 .columna:last-child {
-    margin-left: ; /* Elimina el margen derecho de la última columna */
+    margin-left: 5%; /* Elimina el margen derecho de la última columna */
 }
 
 h3 {
