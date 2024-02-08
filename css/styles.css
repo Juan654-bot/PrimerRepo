@@ -137,6 +137,20 @@ h6 {
     font-size: 17px; /* Ajusta el tamaño de la fuente a 16px */
 }
 
+.background-casa {
+    position: fixed;
+    top: 200px;
+    right: -235px; /* Ajusta el valor según sea necesario */
+    width: 500px; /* Ancho de la imagen */
+    height: 500px; /* Altura de la imagen */
+    background-color: rgba(0, 0, 0, 0); /* Color negro translúcido */
+    background-image: url('../img/casa-translucida.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 70%); /* Define la forma de la imagen */
+    z-index: -1;
+    pointer-events: none;
+}
+
 #section3 {
     height: 500px;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea cuando no haya suficiente espacio */
