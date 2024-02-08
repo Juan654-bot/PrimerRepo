@@ -114,7 +114,7 @@ main {
     height: 22vw;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
     display: block;
     background-color: rgba(164, 164, 164, 0.168); /* Agrega un color de fondo para el relleno */
@@ -124,17 +124,17 @@ main {
 #section2 p {
     color: #333333e8; /* Cambia el color del texto a azul */
     font-size: 1.25vw; /* Ajusta el tamaño de la fuente a 16px */
-    padding-top: 0px;
-    padding-left: 2.5%;
-    padding-right: 5.5%;
+    padding-top: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-h6 {
+#section2 .mejor-calidad-de-vida p {
     text-align: left;
     color: #333333e8; /* Cambia el color del texto a azul */
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 1.1vw; /* Ajusta el tamaño de la fuente a 16px */
+    padding-left: 12%;
+    padding-right: 11%;
+    font-size: 1.15vw; /* Ajusta el tamaño de la fuente a 16px */
 }
 
 .background-casa {
