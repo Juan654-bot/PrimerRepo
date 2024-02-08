@@ -53,7 +53,7 @@ nav ul {
 nav ul li {
     position: relative; /* Añade posicionamiento relativo para que el menú desplegable sea relativo a este elemento */
     display: inline-block; /* Cambia a inline-block para que los elementos se puedan posicionar uno al lado del otro */
-    padding-right: 40px;
+    padding-right: 27.5px;
 }
 
 nav ul li:first-child {
