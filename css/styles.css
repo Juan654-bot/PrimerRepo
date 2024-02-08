@@ -10,6 +10,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Ajusta el ancho al 100% de la ventana */
+    z-index: 1000; /* Asegura que esté por encima de la sección */
 }
 
 header h1 {
@@ -62,7 +67,7 @@ nav ul li a {
 }
 
 main {
-    padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
+    padding-top: 82.5px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
 }
 
 .section {
@@ -81,6 +86,14 @@ main {
     background-position: center;
     padding-left: 5%;
     padding-right: 50%;
+    animation: slideDown 5s forwards; /* Animación de desplazamiento hacia abajo durante 5 segundos */
+    position: relative; /* Asegura que el z-index funcione correctamente */
+    z-index: 1; /* Valor menor para que la animación no cubra el encabezado */
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-5%); } /* Se inicia arriba de la pantalla */
+    100% { transform: translateY(0); } /* Termina en la posición normal */
 }
 
 #section1 .content-wrapper {
@@ -92,7 +105,7 @@ main {
 
 #section2 {
     height: 400px;
-    border-top: 2px solid rgba(3, 3, 3, 0.308); /* Borde para el contenedor de los divs */
+    border-top: 0px solid rgba(3, 3, 3, 0.308); /* Borde para el contenedor de los divs */
     border-bottom: 2px solid rgba(3, 3, 3, 0.308); /* Borde para el contenedor de los divs */
     padding: 10px; /* Ajusta el espacio interno del contenedor */
 }
@@ -134,6 +147,7 @@ h6 {
     height: auto; /* Esto mantiene la proporción de la imagen */
     float: left; /* Hace que la imagen se alinee a la izquierda */
     margin-right: 100px; /* Añade espacio entre la imagen y el texto */
+    left: 0; /* Inicia en la posición izquierda */
 }
 
 #section3 p {
@@ -146,7 +160,7 @@ h6 {
 
 footer {
     height: 300px;
-    background-color: #333;
+    background-color: #111625f9;
     color: #e5e0e0;
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
