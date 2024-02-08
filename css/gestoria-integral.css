@@ -44,18 +44,19 @@ header h1 a {
 
 nav {
     text-align: right;
-    padding-right: 3%;
+    padding-right: 5%;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 5px;
+    margin-top: 5px;
 }
 
 nav ul li {
-    display: inline;
-    padding-right: 45px;
+    position: relative; /* Añade posicionamiento relativo para que el menú desplegable sea relativo a este elemento */
+    display: inline-block; /* Cambia a inline-block para que los elementos se puedan posicionar uno al lado del otro */
+    padding-right: 40px;
 }
 
 nav ul li:first-child {
@@ -65,8 +66,31 @@ nav ul li:first-child {
 nav ul li a {
     color: #e5e0e0;
     text-decoration: none;
-    font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente deseada */
-    font-size: 0.95em; /* Tamaño de fuente para los links */
+    font-family: "Arial", sans-serif;
+    font-size: 1em;
+    display: block; /* Cambia a bloque para que los elementos ocupen todo el ancho disponible */
+    padding-right: 50px; /* Añade un poco de espacio alrededor de los enlaces */
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.903);
+    min-width: 237.5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 27.5px;
+    text-align: left;
+}
+
+nav ul .submenu li {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
 }
 
 /* Estilos para el contenido principal */
@@ -120,8 +144,8 @@ ul {
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 30px; /* Espacio entre elementos de lista */
+.columna ul li {
+    margin-top: 30px; /* Espacio entre elementos de lista */
 }
 
 ul li a {
