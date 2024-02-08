@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.886); /* Color de fondo transparente */
     color: #e5e0e0;
     padding: 17.5px;
     display: flex;
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 main {
-    padding-top: 82.5px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
+    padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
 }
 
 .section {
@@ -75,12 +75,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
 }
 
 #section1 {
-    height: 610px;
+    height: 695px;
     background-image: url('../img/fondo-seccion1.png');
     background-size: cover;
     background-position: center;
@@ -97,10 +97,11 @@ main {
 }
 
 #section1 .content-wrapper {
-    color: #e5e0e0;
+    color: #e5e0e0cd;
+    margin-top: 100px;
     padding: 0px 30px; /* Añade un relleno alrededor del texto para simular un borde */
     background-color: rgba(0, 0, 0, 0.17); /* Agrega un color de fondo para el relleno */
-    border-radius: 10px; /* Aplica bordes redondeados */
+    border-radius: 5px; /* Aplica bordes redondeados */
 }
 
 #section2 {
