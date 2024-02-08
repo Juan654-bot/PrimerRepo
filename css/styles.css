@@ -66,7 +66,7 @@ nav ul li a {
     font-family: "Arial", sans-serif;
     font-size: 1em;
     display: block; /* Cambia a bloque para que los elementos ocupen todo el ancho disponible */
-    padding-right: 50px; /* Añade un poco de espacio alrededor de los enlaces */
+    padding: 7.5px 25px;
 }
 
 nav ul .submenu {
@@ -76,13 +76,14 @@ nav ul .submenu {
     min-width: 237.5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    padding-bottom: 27.5px;
+    padding-bottom: 15px;
     text-align: left;
+    top: 30px; /* Ajusta el valor según sea necesario */
 }
 
 nav ul .submenu li {
-    padding-top: 25px;
-    padding-left: 20px;
+    padding-top: 15px;
+    padding-left: 0px;
     padding-right: 0px;
 }
 
