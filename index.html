@@ -10,16 +10,16 @@
 <body>
     <header>
         <h1>
-            <a href="index.html">
+            <a href="#section1" class="smooth-scroll">
                 <span class="main-title">Ulpiano</span>
                 <span class="subtitle">Estudio Jurídico</span>
             </a>
         </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#section1" class="smooth-scroll">Inicio</a></li>
                 <li>
-                    <a href="#">Servicios ▾</a>
+                    <a href="#section2" class="smooth-scroll">Servicios ▾</a>
                     <ul class="submenu">
                         <li><a href="asesoramiento-juridico.html">Asesoramiento Jurídico</a></li>
                         <li><a href="alquileres.html">Alquileres</a></li>
@@ -28,41 +28,82 @@
                     </ul>
                 </li>
                 <li><a href="img/pagina-en-construccion.jpg">Sobre nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="img/pagina-en-construccion.jpg">Contacto</a></li>
             </ul>
         </nav>
     </header>    
-    
     <main>
         <div class="background-casa"></div>
         <section class="section" id="section1">
             <div class="content-wrapper">
                 <h2>Tu gestión inteligente</h2>
+                <h4>Empresa de Servicios Jurídicos Inmobiliarios</h4>
+                <div class="buttons">
+                    <a href="#section2" class="button smooth-scroll">SERVICIOS</a>
+                    <a href="#section3" class="button smooth-scroll">QUIERO ASESORAMIENTO</a>
+                </div>
             </div>
-        </section>
+        </section>        
         <section class="section" id="section2">
             <div class="section-container">
-                <div>
-                    <p>Nuestro principal objetivo es brindar información, acompañamiento y educación de calidad, para que Ud., su empresa o proyecto obtengan los siguientes resultados:</p>
+                <div class="column-left">
+                    <h2>Áreas de Práctica</h2>
+                    <p><b>Asesoramiento</b> y <b>soluciones</b> que mejorarán su calidad de vida y le proporcionarán tranquilidad presente y futura para <b>usted</b>, su <b>empresa</b> y/o <b>familia</b>.</p>
                 </div>
-                <div class="mejor-calidad-de-vida">
-                    <p>- Buenos negocios<br>- Contratos claros y previsibles<br>- Rentabilidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= MEJOR CALIDAD DE VIDA<br>- Sustentabilidad <br>- Crecimiento propio y de su comunidad</p>
+                <div class="column-center">
+                    <a href="asesoramiento-juridico.html" class="button">
+                        <h3>Asesoramiento Jurídico</h3>
+                        <p>- Estudio de títulos y documentos relacionados</p>
+                        <p>- Procesos Judiciales de Prescripción Adquisitiva</p>
+                        <p>- Acciones posesorias y reales</p>
+                        <p>- Mediación</p>
+                    </a>
+                    <a href="propiedad-horizontal.html" class="button">
+                        <h3>Propiedad Horizontal</h3>
+                        <p>- Administración</p>
+                        <p>- Confección de Reglamentos de P.H.</p>
+                        <p>- Asesoramiento en Proyectos de Desarrollo Inmobiliario</p>        
+                    </a>
                 </div>
-                <div>
-                    <p>Ofrecemos gestión de calidad en cada situación, desde el punto de vista legal y humano para las personas involucradas. Incluye no solo el contrato de partes, sino los procesos previos y posteriores de la relación.</p>
-                </div>
+                <div class="column-right">
+                    <a href="alquileres.html" class="button">
+                        <h3>Alquileres</h3>
+                        <p>- Asesoramiento. Alquilar con el NUEVO DNU</p>
+                        <p>- Confección y/o estudio de Contratos de alquiler</p>
+                        <p>- Mediación</p>
+                    </a>
+                    <a href="gestoria-integral.html" class="button">
+                        <h3>Gestoría Integral</h3>
+                        <p>- Diligencias de Oficios, informes, cédulas, mandamientos.</p>
+                        <p>- Trámites en general</p>                    
+                    </a>
+                </div>                
             </div>
-        </section>
+        </section>               
         <section class="section" id="section3">
-            <div>
-                <img src="img/imagen-seccion3.png" alt="imagen-seccion3" class="imagen-izquierda">
-                <p>
-                    Empresa de Servicios Jurídicos Inmobiliarios.<br> Asesoramiento y soluciones que mejorarán su calidad de vida y le proporcionarán tranquilidad presente y futura para usted, su empresa y/o familia.<br><br> No dude en asesorarse sobre la situación de sus bienes, reciba información segura y propuestas posibles para tomar la mejor decisión y estar tranquilo. Un equipo de profesionales con experiencia y compromiso le guiarán en el mejor camino hacia el mejor resultado para Usted.
-                </p>
+            <div class="form-container">
+                <h2>Formulario de contacto</h2>
+                <p>Por consultas o inquietudes complete el siguiente formulario y <br>un miembro de nuestro estudio responderá a la brevedad.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="whatsapp" name="whatsapp" required placeholder="WhatsApp">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comente brevemente su caso..."></textarea>
+                    </div>
+                    <button type="submit">ENVIAR</button>
+                </form>
             </div>
-        </section>                      
+        </section>                                                   
     </main>
-    
     <footer id="contacto">
         <div class="columna">
             <h3>Ulpiano</h3>
@@ -88,6 +129,6 @@
             </ul>
         </div>
     </footer>
-       
+    <script src="js/smooth-scroll.js"></script>
 </body>
 </html>
