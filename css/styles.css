@@ -260,7 +260,7 @@ main {
     background-color: #111625f2; /* Color de fondo del botón */
     color: #e5e0e0; /* Color del texto del botón */
     border: 0px solid #333; /* Borde del botón */
-    border-radius: 5px; /* Borde redondeado */
+    border-radius: 3.75px; /* Borde redondeado */
     text-align: left; /* Centrar texto */
     font-size: 0.5em; /* Tamaño de fuente del texto */
     text-decoration: none;
