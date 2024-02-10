@@ -365,7 +365,8 @@ main {
 
 #section3 .input-group {
     flex: 1;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #section3 label {
