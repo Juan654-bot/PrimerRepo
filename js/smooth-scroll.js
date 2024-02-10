@@ -80,3 +80,15 @@ window.addEventListener('scroll', function() {
         imageContainer.classList.remove('visible');
     }
 });
+
+window.addEventListener('scroll', function() {
+    var section3 = document.getElementById('section3');
+    var position = section3.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (position < screenHeight) {
+        section3.classList.add('visible');
+    } else {
+        section3.classList.remove('visible');
+    }
+});

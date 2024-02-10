@@ -1,0 +1,374 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.886); /* Color de fondo transparente */
+    color: #e5e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Ajusta el ancho al 100% de la ventana */
+    z-index: 1000; /* Asegura que esté por encima de la sección */
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 5%;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#myHeader {
+    transition: background-color 0.3s ease, padding 0.3s;
+  }
+  
+  .opaque {
+    background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
+    padding: 17.5px; /* Ajusta el padding según tus necesidades */
+  }  
+
+/* Estilos para el título principal */
+.main-title {
+    font-size: 1.3em; /* Tamaño de fuente para el título principal */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    font-size: 0.7em; /* Tamaño de fuente para el subtítulo */
+    color: #888; /* Color de texto más claro para el subtítulo */
+    padding-left: 7px;
+}
+
+nav {
+    text-align: right;
+    padding-right: 5%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 5px;
+}
+
+nav ul li {
+    position: relative; /* Añade posicionamiento relativo para que el menú desplegable sea relativo a este elemento */
+    display: inline-block; /* Cambia a inline-block para que los elementos se puedan posicionar uno al lado del otro */
+    padding-right: 10px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #e5e0e0;
+    text-decoration: none;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
+    display: block; /* Cambia a bloque para que los elementos ocupen todo el ancho disponible */
+    padding: 10px 25px;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.903);
+    border-radius: 2.5px;
+    min-width: 237.5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 15px;
+    text-align: left;
+    top: 30px; /* Ajusta el valor según sea necesario */
+    font-size: 0.975em;
+}
+
+nav ul .submenu li {
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+main {
+    padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
+}
+
+.section {
+    height: 100vh; /* Establece la altura de cada sección al 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+#section1 {
+    height: 325px;
+    position: relative; /* Asegura que el z-index funcione correctamente */
+    z-index: 1; /* Valor menor para que la animación no cubra el encabezado */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga de los límites de la sección */
+}
+
+#section1 h4 {
+    font-size: 0.85em;
+}
+
+#section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 22, 37, 0.667); /* Azul translúcido */
+    z-index: -1; /* Valor menor para que esté detrás de la imagen */
+}
+
+#section1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo-seccion1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: scaleAnimation 15s infinite; /* Animación de escala infinita durante 15 segundos */
+    z-index: -2; /* Valor menor para que esté detrás de la imagen */
+}
+
+@keyframes scaleAnimation {
+    0%, 100% { transform: scale(1); } /* Escala normal al inicio y al final */
+    50% { transform: scale(1.075); } /* Escala al 110% a la mitad de la animación */
+}
+
+#section1 .content-wrapper {
+    color: #e5e0e0;
+    margin-top: 100px;
+    padding: 0px 30px; /* Añade un relleno alrededor del texto para simular un borde */
+    background-color: rgba(0, 0, 0, 0); /* Agrega un color de fondo para el relleno */
+    border-radius: 5px; /* Aplica bordes redondeados */
+}
+
+#section2 {
+    height: 475px;
+    padding: 0px 0; /* Agrega un espacio interno a la sección */
+    background-color: #e5e0e04e;
+}
+
+#section2 .section-container {
+    max-width: 1000px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+#section2 .column-center {
+    text-align: center; /* Centra el texto */
+}
+
+#section2 .column-center h2 {
+    font-size: 0.9em; /* Tamaño del título */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    text-align: left;
+}
+
+#section2 .column-center p {
+    font-size: 0.525em; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+    line-height: 1.6; /* Altura de línea del texto */
+    text-align: left;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+.background-casa {
+    position: fixed;
+    top: 200px;
+    right: -235px; /* Ajusta el valor según sea necesario */
+    width: 500px; /* Ancho de la imagen */
+    height: 500px; /* Altura de la imagen */
+    filter: brightness(1.2) saturate(120%) hue-rotate(20deg);
+    background-image: url('../img/casa-translucida.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 70%); /* Define la forma de la imagen */
+    z-index: -1;
+    pointer-events: none;
+}
+
+#section3 {
+    height: auto; /* Altura automática */
+    padding: 75px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50px); /* Mueve la sección hacia la izquierda */
+    transition: opacity 0.5s, transform 1.25s;
+}
+
+#section3.visible .content-wrapper {
+    opacity: 1;
+    transform: translateY(0); /* Restablece la posición original */
+}
+
+.image-container {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-50px); /* Mueve la imagen hacia la izquierda */
+    transition: opacity 0.5s, transform 1.25s;
+}
+
+.image-container img {
+    max-width: 42.5%;
+    height: auto;
+    width: 100%;
+    border-radius: 1%; /* Para hacer la imagen redonda */
+}
+
+.description-container {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(100px); /* Mueve la descripción hacia la derecha */
+    transition: opacity 0.5s, transform 1.25s;
+}
+
+#section3.visible .image-container,
+#section3.visible .description-container {
+    opacity: 1;
+    transform: translateY(0); /* Restablece la posición original */
+}
+
+.description-container h2 {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.description-container p {
+    font-size: 0.525em;
+    margin-bottom: 10px;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espacio entre la imagen y la descripción en dispositivos móviles */
+        text-align: center; /* Centrar la imagen en dispositivos móviles */
+    }
+}
+
+#section4 {
+    height: 475px;
+    padding: 0px 0; /* Agrega un espacio interno a la sección */
+    background-color: #e5e0e04e;
+}
+
+#section4 .section-container {
+    max-width: 1000px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+#section4 .column-center {
+    text-align: center; /* Centra el texto */
+}
+
+#section4 .column-center h2 {
+    font-size: 0.9em; /* Tamaño del título */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    text-align: left;
+}
+
+#section4 .column-center p {
+    font-size: 0.525em; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+    line-height: 1.6; /* Altura de línea del texto */
+    text-align: left;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+footer {
+    height: 300px;
+    background-color: #111625f9;
+    color: #e5e0e0;
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+    padding-left: 12%;
+}
+
+.columna {
+    flex: 1;
+    margin-left: 0%; /* Espacio entre columnas */
+}
+
+.columna:last-child {
+    margin-left: 5%; /* Elimina el margen derecho de la última columna */
+}
+
+h3 {
+    font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-top: 30px; /* Espacio entre elementos de lista */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e5e0e0; /* Color de enlace */
+    font-size: 1em; /* Tamaño de fuente para los enlaces */
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+ul li a:hover {
+    text-decoration: none; /* Subraya el enlace al pasar el cursor */
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+}
+
+.special {
+    padding-top: 55px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
+}
