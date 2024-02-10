@@ -179,7 +179,8 @@ ul {
 ul li a {
     text-decoration: none;
     color: #e5e0e0; /* Color de enlace */
-    font-size: 1.05em; /* Tamaño de fuente para los enlaces */
+    font-size: 1em; /* Tamaño de fuente para los enlaces */
+    font-family: 'Roboto-Light', sans-serif;
 }
 
 ul li a:hover {
@@ -189,4 +190,6 @@ ul li a:hover {
 
 .special {
     padding-top: 55px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
 }
