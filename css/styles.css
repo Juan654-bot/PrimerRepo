@@ -327,7 +327,7 @@ main {
     overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
     z-index: -1;
     opacity: 0; /* Inicialmente, oculta la imagen */
-    transform: translateX(-50px); /* Inicialmente, mueve la imagen hacia arriba */
+    transform: translateX(-20px); /* Inicialmente, mueve la imagen hacia arriba */
     transition: opacity 0.5s, transform 1.25s; /* Agrega una transición suave */
 }
 
@@ -359,7 +359,7 @@ main {
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(20px);
     transition: opacity 0.5s, transform 1.25s;
     flex: 1;
 }

@@ -245,7 +245,7 @@ main {
     max-width: 900px;
     width: 100%;
     opacity: 0;
-    transform: translateX(-50px); /* Mueve la sección hacia la izquierda */
+    transform: translateX(-20px); /* Mueve la sección hacia la izquierda */
     transition: opacity 0.5s, transform 1.25s;
 }
 
@@ -257,7 +257,7 @@ main {
 .image-container {
     flex: 1;
     opacity: 0;
-    transform: translateX(-50px); /* Mueve la imagen hacia la izquierda */
+    transform: translateX(-20px); /* Mueve la imagen hacia la izquierda */
     transition: opacity 0.5s, transform 1.25s;
 }
 
