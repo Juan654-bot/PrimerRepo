@@ -233,6 +233,11 @@ main {
     transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
 }
 
+.column-center p, .column-right p{
+    font-size: 0.9em; /* Reducir el tamaño de fuente del texto */
+    font-family: 'Roboto-Light', sans-serif;
+}
+
 .visible {
     opacity: 1; /* Muestra las columnas */
     transform: translateX(0); /* Restablece la posición original */
