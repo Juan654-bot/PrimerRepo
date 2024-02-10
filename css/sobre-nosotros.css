@@ -253,7 +253,7 @@ main {
     max-width: 57.5%;
     height: auto;
     width: 100%;
-    border-radius: 1%; /* Para hacer la imagen redonda */
+    border-radius: 0.5%; /* Para hacer la imagen redonda */
 }
 
 .description-container {
