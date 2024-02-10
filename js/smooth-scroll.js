@@ -15,3 +15,44 @@ smoothScrollLinks.forEach(function(link) {
         });
     });
 });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myHeader").classList.add("opaque");
+  } else {
+    document.getElementById("myHeader").classList.remove("opaque");
+  }
+}
+
+window.addEventListener('scroll', function() {
+    var columnLeft = document.querySelector('.column-left');
+    var columnCenter = document.querySelector('.column-center');
+    var columnRight = document.querySelector('.column-right');
+
+    var positionLeft = columnLeft.getBoundingClientRect().top;
+    var positionCenter = columnCenter.getBoundingClientRect().top;
+    var positionRight = columnRight.getBoundingClientRect().top;
+
+    var screenHeight = window.innerHeight;
+
+    if (positionLeft < screenHeight) {
+        columnLeft.classList.add('visible');
+    } else {
+        columnLeft.classList.remove('visible');
+    }
+
+    if (positionCenter < screenHeight) {
+        columnCenter.classList.add('visible');
+    } else {
+        columnCenter.classList.remove('visible');
+    }
+
+    if (positionRight < screenHeight) {
+        columnRight.classList.add('visible');
+    } else {
+        columnRight.classList.remove('visible');
+    }
+});
