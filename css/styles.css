@@ -329,6 +329,7 @@ main {
     height: 625px;
     width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
     object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+    border-radius: 2.5px;
 }
 
 #section3 h2 {
