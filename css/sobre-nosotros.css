@@ -206,8 +206,21 @@ main {
 
 .background-casa {
     position: fixed;
-    top: 200px;
-    right: -175px; /* Ajusta el valor según sea necesario */
+    top: 250px;
+    right: -250px; /* Ajusta el valor según sea necesario */
+    width: 425px; /* Ancho de la imagen */
+    height: 425px; /* Altura de la imagen */
+    filter: brightness(1.2) saturate(120%) hue-rotate(20deg);
+    background-image: url('../img/u.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    z-index: -1;
+    pointer-events: none;
+}
+
+.u2 {
+    position: fixed;
+    top: -200px;
+    left: -300px; /* Ajusta el valor según sea necesario */
     width: 425px; /* Ancho de la imagen */
     height: 425px; /* Altura de la imagen */
     filter: brightness(1.2) saturate(120%) hue-rotate(20deg);
