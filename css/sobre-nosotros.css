@@ -306,7 +306,7 @@ main {
 }
 
 #section4 {
-    height: 525px;
+    height: 500px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
@@ -320,19 +320,40 @@ main {
     text-align: center; /* Centra el texto */
 }
 
-#section4 .column-center h2 {
-    font-size: 0.9em; /* Tamaño del título */
-    color: #333; /* Color del título */
-    margin-bottom: 20px; /* Espacio inferior del título */
-    text-align: left;
-}
-
 #section4 .column-center p {
     font-size: 0.525em; /* Tamaño del texto */
     color: #666; /* Color del texto */
     line-height: 1.6; /* Altura de línea del texto */
     text-align: left;
     font-family: 'Roboto-Light', sans-serif;
+}
+
+#section4 .text-container {
+    position: relative;
+}
+
+#section4 .text-container::before{
+    content: '‟';
+    position: absolute;
+    font-size: 80px; /* Tamaño de las comillas */
+    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
+}
+
+#section4 .text-container::after {
+    content: '”';
+    position: absolute;
+    font-size: 80px; /* Tamaño de las comillas */
+    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
+}
+
+#section4 .text-container::before {
+    top: -50px; /* Posición antes del texto */
+    left: -75px; /* Ajuste horizontal */
+}
+
+#section4 .text-container::after {
+    bottom: -75px; /* Posición después del texto */
+    right: -50px; /* Ajuste horizontal */
 }
 
 footer {
