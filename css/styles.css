@@ -150,7 +150,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/fondo-seccion1-2.jpg');
+    background-image: url('../img/fondo-seccion1.jpg');
     background-size: cover;
     background-position: center;
     animation: scaleAnimation 15s infinite; /* Animación de escala infinita durante 15 segundos */
