@@ -219,7 +219,7 @@ main {
 }
 
 #section3 {
-    height: auto; /* Altura automática */
+    height: 350px; /* Altura automática */
     padding: 75px 20px;
     display: flex;
     justify-content: center;
@@ -230,7 +230,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
     opacity: 0;
     transform: translateX(-50px); /* Mueve la sección hacia la izquierda */
@@ -250,7 +250,7 @@ main {
 }
 
 .image-container img {
-    max-width: 42.5%;
+    max-width: 57.5%;
     height: auto;
     width: 100%;
     border-radius: 1%; /* Para hacer la imagen redonda */
@@ -294,7 +294,7 @@ main {
 }
 
 #section4 {
-    height: 475px;
+    height: 500px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
