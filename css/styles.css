@@ -193,7 +193,7 @@ main {
 }
 
 #section2 {
-    height: 625px; /* Cambiar a altura automática */
+    height: 600px; /* Cambiar a altura automática */
     padding: 20px; /* Ajustar el espacio interno */
     padding-left: 10%;
     padding-right: 10%;
@@ -291,7 +291,7 @@ main {
 }
 
 #section3 {
-    height: 525px; /* Cambiar a altura automática */
+    height: 450px; /* Cambiar a altura automática */
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #e5e0e06b;
@@ -326,7 +326,7 @@ main {
 
 .image-container img {
     max-width: 100%;
-    height: 625px;
+    height: 550px;
     width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
     object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
     border-radius: 2.5px;
