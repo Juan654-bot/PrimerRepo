@@ -193,7 +193,7 @@ main {
 }
 
 #section2 {
-    height: 655px; /* Cambiar a altura automática */
+    height: 625px; /* Cambiar a altura automática */
     padding: 20px; /* Ajustar el espacio interno */
     padding-left: 10%;
     padding-right: 10%;
@@ -286,10 +286,44 @@ main {
 }
 
 #section3 {
-    height: 500px; /* Cambiar a altura automática */
+    height: 525px; /* Cambiar a altura automática */
     padding-top: 75px;
     padding-bottom: 75px;
-    background-color: #e5e0e054;
+    background-color: #e5e0e06b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 10%; /* Aumentar el margen derecho para mover la imagen más a la izquierda */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+    z-index: -1;
+    opacity: 0; /* Inicialmente, oculta la imagen */
+    transform: translateX(-50px); /* Inicialmente, mueve la imagen hacia arriba */
+    transition: opacity 0.5s, transform 1.25s; /* Agrega una transición suave */
+}
+
+.image-container.visible {
+    opacity: 1; /* Muestra la imagen */
+    transform: translateY(0); /* Restablece la posición original */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 625px;
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
 }
 
 #section3 h2 {
@@ -306,6 +340,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 1.25s;
+    flex: 1;
+}
+
+#section3 .form-container.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #section3 .form-group {
@@ -348,6 +391,18 @@ main {
     width: 20%;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espacio entre la imagen y el formulario en dispositivos móviles */
+    }
 }
 
 footer {

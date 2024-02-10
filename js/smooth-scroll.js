@@ -56,3 +56,27 @@ window.addEventListener('scroll', function() {
         columnRight.classList.remove('visible');
     }
 });
+
+window.addEventListener('scroll', function() {
+    var formContainer = document.querySelector('.form-container');
+    var positionForm = formContainer.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (positionForm < screenHeight) {
+        formContainer.classList.add('visible');
+    } else {
+        formContainer.classList.remove('visible');
+    }
+});
+
+window.addEventListener('scroll', function() {
+    var imageContainer = document.querySelector('.image-container');
+    var positionImage = imageContainer.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (positionImage < screenHeight) {
+        imageContainer.classList.add('visible');
+    } else {
+        imageContainer.classList.remove('visible');
+    }
+});

@@ -81,28 +81,34 @@
             </div>
         </section>               
         <section class="section" id="section3">
-            <div class="form-container">
-                <h2>Formulario de contacto</h2>
-                <p>Por consultas o inquietudes complete el siguiente formulario y <br>un miembro de nuestro estudio responderá a la brevedad.</p>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            <div class="content-wrapper">
+                <div class="image-container">
+                    <!-- Aquí va tu imagen -->
+                    <img src="img/imagen-seccion3.jpg" alt="Imagen-formulario">
+                </div>
+                <div class="form-container">
+                    <h2>Formulario de contacto</h2>
+                    <p>Por consultas o inquietudes complete el siguiente formulario y <br>un miembro de nuestro estudio responderá a la brevedad.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="whatsapp" name="whatsapp" required placeholder="WhatsApp">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required placeholder="E-mail">
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input type="text" id="whatsapp" name="whatsapp" required placeholder="WhatsApp">
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comente brevemente su caso..."></textarea>
                         </div>
-                        <div class="input-group">
-                            <input type="email" id="email" name="email" required placeholder="E-mail">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comente brevemente su caso..."></textarea>
-                    </div>
-                    <button type="submit">ENVIAR</button>
-                </form>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
             </div>
-        </section>                                                   
+        </section>                                                           
     </main>
     <footer id="contacto">
         <div class="columna">
