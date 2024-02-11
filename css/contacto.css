@@ -175,33 +175,46 @@ main {
 }
 
 #section2 {
-    height: 450px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
-    background-color: #e5e0e04e;
 }
 
-#section2 .section-container {
+#section2 .content-wrapper {
     max-width: 1000px; /* Ancho máximo del contenido */
     margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
 }
 
-#section2 .column-center {
-    text-align: center; /* Centra el texto */
+#section2 .map-container {
+    flex: 1;
+    margin-right: 150px;
 }
 
-#section2 .column-center h2 {
-    font-size: 0.9em; /* Tamaño del título */
-    color: #333; /* Color del título */
-    margin-bottom: 20px; /* Espacio inferior del título */
+#section2 .contact-info {
+    flex: 1;
     text-align: left;
 }
 
-#section2 .column-center p {
-    font-size: 0.525em; /* Tamaño del texto */
-    color: #666; /* Color del texto */
-    line-height: 1.6; /* Altura de línea del texto */
-    text-align: left;
+#section2 .contact-row {
+    margin-bottom: 45px;
+}
+
+#section2 .contact-row h3 {
+    font-size: 0.75em;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+#section2 .contact-row a {
+    font-size: 0.5em; /* Tamaño del texto */
+    color: #666;
     font-family: 'Roboto-Light', sans-serif;
+    list-style: none; /* Elimina los puntos de la lista */
 }
 
 .background-casa {
@@ -231,66 +244,140 @@ main {
 }
 
 #section3 {
-    height: 300px; /* Altura automática */
-    padding: 75px 20px;
+    height: 200px;
+    padding: 0px 0; /* Agrega un espacio interno a la sección */
+    background-color: #e5e0e04e;
+}
+
+#section3 .section-container {
+    max-width: 1000px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+#section3 .column-center {
+    text-align: center; /* Centra el texto */
+}
+
+#section3 .column-center p {
+    font-size: 0.525em; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+    line-height: 1.6; /* Altura de línea del texto */
+    text-align: left;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+#section3 .text-container {
+    position: relative;
+}
+
+#section4 {
+    height: 450px; /* Cambiar a altura automática */
+    padding-top: 75px;
+    padding-bottom: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#section3 .content-wrapper {
+#section4 .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
-    opacity: 0;
-    transform: translateX(-20px); /* Mueve la sección hacia la izquierda */
-    transition: opacity 0.5s, transform 1.25s;
+    padding: 0 20px;
 }
 
-#section3.visible .content-wrapper {
-    opacity: 1;
+#section4 .image-container {
+    flex: 1;
+    margin-left: 10%; /* Mueve la imagen más a la derecha */
+    margin-right: 0; /* Elimina el margen derecho */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+    z-index: -1;
+    opacity: 0; /* Inicialmente, oculta la imagen */
+    transform: translateX(20px); /* Inicialmente, mueve la imagen hacia la derecha */
+    transition: opacity 0.5s, transform 1.25s; /* Agrega una transición suave */
+}
+
+#section4 .image-container.visible {
+    opacity: 1; /* Muestra la imagen */
     transform: translateY(0); /* Restablece la posición original */
 }
 
-.image-container {
-    flex: 1;
+#section4 .image-container img {
+    max-width: 100%;
+    height: 550px;
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+    border-radius: 2.5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
-    transform: translateX(-20px); /* Mueve la imagen hacia la izquierda */
+    transform: translateX(-20px);
     transition: opacity 0.5s, transform 1.25s;
-    margin-right: 50px;
-}
-
-.image-container img {
-    max-width: 50%;
-    height: auto;
-    width: 100%;
-    border-radius: 0.835%; /* Para hacer la imagen redonda */
-}
-
-.description-container {
     flex: 1;
-    opacity: 0;
-    transform: translateX(100px); /* Mueve la descripción hacia la derecha */
-    transition: opacity 0.5s, transform 1.25s;
 }
 
-#section3.visible .image-container,
-#section3.visible .description-container {
-    opacity: 1;
-    transform: translateY(0); /* Restablece la posición original */
+.form-container h2{
+    font-size: 1.15em; /* Reducir el tamaño de fuente del título */
+    margin-bottom: 0px;
 }
 
-.description-container h2 {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-.description-container p {
-    font-size: 0.525em;
-    margin-bottom: 10px;
+.form-container p{
+    font-size: 0.55em;
     font-family: 'Roboto-Light', sans-serif;
+}
+
+.form-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section4 .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#section4 .input-group {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#section4 label {
+    display: block;
+}
+
+#section4 input,
+#section4 textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 0.5em;
+}
+
+#section4 button {
+    background-color: #111625f9;
+    color: white;
+    padding: 12px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 19%;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 0.45em;
 }
 
 @media (max-width: 768px) {
@@ -301,60 +388,8 @@ main {
 
     .image-container {
         margin-right: 0;
-        margin-bottom: 20px; /* Espacio entre la imagen y la descripción en dispositivos móviles */
-        text-align: center; /* Centrar la imagen en dispositivos móviles */
+        margin-bottom: 20px; /* Espacio entre la imagen y el formulario en dispositivos móviles */
     }
-}
-
-#section4 {
-    height: 450px;
-    padding: 0px 0; /* Agrega un espacio interno a la sección */
-    background-color: #e5e0e04e;
-}
-
-#section4 .section-container {
-    max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-}
-
-#section4 .column-center {
-    text-align: center; /* Centra el texto */
-}
-
-#section4 .column-center p {
-    font-size: 0.525em; /* Tamaño del texto */
-    color: #666; /* Color del texto */
-    line-height: 1.6; /* Altura de línea del texto */
-    text-align: left;
-    font-family: 'Roboto-Light', sans-serif;
-}
-
-#section4 .text-container {
-    position: relative;
-}
-
-#section4 .text-container::before{
-    content: '‟';
-    position: absolute;
-    font-size: 80px; /* Tamaño de las comillas */
-    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
-}
-
-#section4 .text-container::after {
-    content: '”';
-    position: absolute;
-    font-size: 80px; /* Tamaño de las comillas */
-    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
-}
-
-#section4 .text-container::before {
-    top: -50px; /* Posición antes del texto */
-    left: -75px; /* Ajuste horizontal */
-}
-
-#section4 .text-container::after {
-    bottom: -75px; /* Posición después del texto */
-    right: -50px; /* Ajuste horizontal */
 }
 
 footer {

@@ -92,3 +92,38 @@ window.addEventListener('scroll', function() {
         section3.classList.remove('visible');
     }
 });
+
+window.addEventListener('scroll', function() {
+    var imageContainer = document.querySelector('#section4 .image-container');
+    var positionImage = imageContainer.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (positionImage < screenHeight) {
+        imageContainer.classList.add('visible');
+    } else {
+        imageContainer.classList.remove('visible');
+    }
+});
+
+window.addEventListener('scroll', function() {
+    var section4 = document.getElementById('section4');
+    var position = section4.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (position < screenHeight) {
+        section4.classList.add('visible');
+    } else {
+        section4.classList.remove('visible');
+    }
+});
+
+// Función para verificar si el footer está visible en la pantalla
+function isFooterVisible() {
+    var footer = document.querySelector('footer');
+    var footerPosition = footer.getBoundingClientRect();
+
+    // Verifica si la parte superior del footer está dentro de la pantalla
+    return footerPosition.top < window.innerHeight;
+}
+
+var footerShown = false;
