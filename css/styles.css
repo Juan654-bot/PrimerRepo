@@ -225,6 +225,7 @@ main {
     opacity: 0; /* Inicialmente, oculta las columnas */
     transform: translateX(-100px); /* Mueve las columnas hacia la izquierda */
     transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
+    margin-right: 2.5%;
 }
 
 .column-center {
