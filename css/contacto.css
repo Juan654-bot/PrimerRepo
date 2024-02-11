@@ -83,7 +83,7 @@ nav ul li a {
     color: #e5e0e0;
     text-decoration: none;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 1em;
+    font-size: 0.925em;
     display: block; /* Cambia a bloque para que los elementos ocupen todo el ancho disponible */
     padding: 10px 25px;
 }
