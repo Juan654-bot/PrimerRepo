@@ -227,7 +227,13 @@ main {
     transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
 }
 
-.column-center, .column-right {
+.column-center {
+    opacity: 0; /* Inicialmente, oculta las columnas */
+    transform: translateX(100px); /* Mueve las columnas hacia la izquierda */
+    transition: opacity 0.5s, transform 0.475s; /* Agrega una transición suave */
+}
+
+.column-right {
     opacity: 0; /* Inicialmente, oculta las columnas */
     transform: translateX(100px); /* Mueve las columnas hacia la izquierda */
     transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
