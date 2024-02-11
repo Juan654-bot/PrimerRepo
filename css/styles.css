@@ -334,7 +334,7 @@ main {
     z-index: -1;
     opacity: 0; /* Inicialmente, oculta la imagen */
     transform: translateX(-20px); /* Inicialmente, mueve la imagen hacia arriba */
-    transition: opacity 0.5s, transform 1.25s; /* Agrega una transición suave */
+    transition: opacity 0.5s, transform 1s; /* Agrega una transición suave */
 }
 
 .image-container.visible {
@@ -366,7 +366,7 @@ main {
     align-items: center;
     opacity: 0;
     transform: translateX(20px);
-    transition: opacity 0.5s, transform 1.25s;
+    transition: opacity 0.5s, transform 1s;
     flex: 1;
 }
 
