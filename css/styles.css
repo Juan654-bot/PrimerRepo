@@ -473,3 +473,11 @@ ul li a:hover {
     font-family: 'Roboto-Light', sans-serif;
     font-size: 1em;
 }
+
+/* Estilos específicos para el ícono de LinkedIn */
+#contacto img.linkedin-icon {
+    width: 22.5px; /* Cambia el tamaño del ícono */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 10px; /* Agrega un margen a la derecha del ícono */
+    filter: brightness(71%) contrast(84%); /* Cambia el color del ícono */
+}
