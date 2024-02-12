@@ -293,19 +293,6 @@ main {
     font-family: 'Roboto-Light', sans-serif;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-container {
-        margin-right: 0;
-        margin-bottom: 20px; /* Espacio entre la imagen y la descripción en dispositivos móviles */
-        text-align: center; /* Centrar la imagen en dispositivos móviles */
-    }
-}
-
 #section4 {
     height: 425px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
@@ -407,10 +394,194 @@ ul li a:hover {
     font-size: 1em;
 }
 
+.special2 {
+    display: none;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
+}
+
 /* Estilos específicos para el ícono de LinkedIn */
 #contacto img.linkedin-icon {
     width: 22.5px; /* Cambia el tamaño del ícono */
     height: auto; /* Ajusta la altura automáticamente */
     margin-right: 10px; /* Agrega un margen a la derecha del ícono */
     filter: brightness(90%) contrast(84%); /* Cambia el color del ícono */
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        margin: 0;
+        padding-left: 1.25%;
+    }
+
+    .main-title {
+        font-size: 1.05em;
+    }
+
+    .subtitle {
+        font-size: 0.6em;
+    }
+
+    .main-title, .subtitle {
+        display: block; /* Cambia el display a bloque para que se muestren en líneas separadas */
+        text-align: center; /* Alinea los elementos al centro */
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
+        cursor: pointer;
+        margin-right: 63.5px;
+        font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+    }
+
+/* Estilo para el menú desplegable */
+#menu-slideout {
+    position: fixed;
+    display: block;
+    padding-top: 15px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0; /* Cambiado a 0 inicialmente */
+    background-color: #ffffff; /* Color de fondo del menú */
+    overflow-x: hidden;
+    transition: width 0.25s; /* Transición suave al abrir o cerrar el menú */
+    z-index: 1001; /* Asegura que esté por encima del encabezado */
+}
+
+/* Añade estilo adicional para el contenido del menú si es necesario */
+#menu-slideout ul {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 30px;
+    text-align: left;
+    /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
+}
+
+#menu-slideout ul li a{
+    color: #000;
+    font-size: 1.05em;
+    padding-right: 70px;
+    margin-bottom: 15px;
+    /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
+}
+
+#menu-slideout ul li .contact-slideout1 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 1em;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+#menu-slideout ul li .contact-slideout2 {
+    font-size: 1em;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+/* Estilos para los enlaces que contienen los íconos */
+#menu-slideout ul li .linkedin-icon {
+    width: 24px; /* Ancho deseado para los íconos */
+    height: 24px; /* Alto deseado para los íconos */
+}
+
+/* Estilo para el botón de cierre */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 85px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Estilo para la capa de fondo semitransparente */
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.273); /* Color semitransparente */
+    display: none; /* Ocultar inicialmente */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+    #section1 {
+        height: 350px;
+    }
+
+    #section1 h2 {
+        font-size: 1.3em;
+    }
+    
+    #section1 h4 {
+        font-size: 0.7em;
+    }
+
+    #section2 {
+        height: 500px;
+    }
+
+    #section2 .column-center{
+        margin: 25px;
+    }
+
+    #section3 {
+        height: 350px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espacio entre la imagen y el formulario en dispositivos móviles */
+    }
+
+    #section3 .content-wrapper {
+        transform: translateY(20px); /* Mueve la sección hacia la izquierda */
+    }
+    
+    .image-container {
+        transform: translateY(20px); /* Mueve la imagen hacia la izquierda */
+    }
+    
+    .description-container {
+        transform: translateY(100px); /* Mueve la descripción hacia la derecha */
+    }
+
+    #section4 {
+        height: 625px;
+    }
+
+    #section4 .text-container {
+        margin: 25px;
+    }
+
+    #contacto {
+        height: 400px;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    #Ulpiano-footer {
+        display: none;
+    }
+
+    #contacto .columna {
+        margin-left: 0px;
+    }
+
+    .special2 {
+        display: block;
+        margin-top: 75px;
+    }
 }
