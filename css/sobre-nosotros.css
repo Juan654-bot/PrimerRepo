@@ -420,7 +420,7 @@ ul li a:hover {
     }
 
     .main-title {
-        font-size: 1.05em;
+        font-size: 0.9em;
     }
 
     .subtitle {
@@ -568,6 +568,14 @@ ul li a:hover {
 
     #section4 .text-container {
         margin: 25px;
+    }
+
+    #section4 .text-container::before {
+        display: none;
+    }
+    
+    #section4 .text-container::after {
+        display: none;
     }
 
     #contacto {
