@@ -366,6 +366,7 @@ main {
 }
 
 #section3 p {
+    max-width: 450px;
     font-size: 0.55em;
     font-family: 'Roboto-Light', sans-serif;
 }
@@ -499,6 +500,10 @@ ul li a:hover {
         padding-left: 1.25%;
     }
 
+    .main-title {
+        font-size: 1.1em;
+    }
+
     .main-title, .subtitle {
         display: block; /* Cambia el display a bloque para que se muestren en líneas separadas */
         text-align: center; /* Alinea los elementos al centro */
@@ -629,6 +634,6 @@ ul li a:hover {
 
     .special2 {
         display: block;
-        margin-top: 50px;
+        margin-top: 75px;
     }
 }
