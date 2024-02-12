@@ -445,7 +445,7 @@ main {
         display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
         cursor: pointer;
         margin-right: 40px;
-        font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+        font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
     }
 
     #section1 {
@@ -487,7 +487,7 @@ main {
     }
 
     #section2 .button#asesoramiento {
-        padding-bottom: 25px;
+        padding-bottom: 50px;
     }
 
     #section3 {
