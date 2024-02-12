@@ -447,7 +447,7 @@ main {
     }
 
     #section1 {
-        height: 800px;
+        height: 850px;
     }
 
     #section1 h4 {
@@ -455,7 +455,7 @@ main {
     }
 
     #section2 {
-        height: 1150px;
+        height: 1175px;
     }
 
     .section-container {
@@ -463,14 +463,19 @@ main {
         align-items: center;
     }
 
+    .column-left {
+        transform: translateY(100px); /* Mueve las columnas hacia la izquierda */
+    }
+
     .column-center {
         margin-bottom: -15px;
+        transform: translateY(100px); /* Mueve las columnas hacia la izquierda */
     }
 
     .column-right {
         margin-top: -15px;
         opacity: 0; /* Inicialmente, oculta las columnas */
-        transform: translateX(-100px); /* Mueve las columnas hacia la izquierda */
+        transform: translateY(100px); /* Mueve las columnas hacia la izquierda */
         transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
     }
     
