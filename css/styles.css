@@ -203,6 +203,11 @@ main {
     padding-right: 10%;
 }
 
+#anchor-section2 {
+    position: relative; /* Cambia la posición del elemento */
+    top: -385px; /* Mueve el elemento hacia arriba 385px */
+}
+
 #section2 .section-container {
     display: flex; /* Utilizar flexbox para diseño flexible */
     justify-content: space-between; /* Distribuir elementos uniformemente */
@@ -423,6 +428,70 @@ main {
     font-size: 0.45em;
 }
 
+footer {
+    height: 300px;
+    background-color: #111625f9;
+    color: #e5e0e0;
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+    padding-left: 12%;
+}
+
+.columna {
+    flex: 1;
+    margin-left: 0%; /* Espacio entre columnas */
+}
+
+.columna:last-child {
+    margin-left: 5%; /* Elimina el margen derecho de la última columna */
+}
+
+h3 {
+    font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-top: 30px; /* Espacio entre elementos de lista */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e5e0e0; /* Color de enlace */
+    font-size: 1em; /* Tamaño de fuente para los enlaces */
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+ul li a:hover {
+    text-decoration: none; /* Subraya el enlace al pasar el cursor */
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+}
+
+.special {
+    padding-top: 55px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
+}
+
+.special2 {
+    display: none;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 1em;
+}
+
+/* Estilos específicos para el ícono de LinkedIn */
+#contacto img.linkedin-icon {
+    width: 22.5px; /* Cambia el tamaño del ícono */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 10px; /* Agrega un margen a la derecha del ícono */
+    filter: brightness(90%) contrast(84%); /* Cambia el color del ícono */
+}
+
 @media (max-width: 768px) {
 
     header h1 {
@@ -457,7 +526,12 @@ main {
     }
 
     #section2 {
-        height: 1175px;
+        height: 1200px;
+    }
+
+    #anchor-section2 {
+        position: relative; /* Cambia la posición del elemento */
+        top: -715px; /* Mueve el elemento hacia arriba 385px */
     }
 
     .section-container {
@@ -510,7 +584,7 @@ main {
     }
 
     #contacto {
-        height: 600px;
+        height: 400px;
         flex-direction: column;
         align-items: left;
     }
@@ -523,65 +597,8 @@ main {
         margin-left: 0px;
     }
 
-    #contacto .special {
-        padding-top: 50px;
+    .special2 {
+        display: block;
+        margin-top: 45px;
     }
-}
-
-footer {
-    height: 300px;
-    background-color: #111625f9;
-    color: #e5e0e0;
-    display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
-    padding-left: 12%;
-}
-
-.columna {
-    flex: 1;
-    margin-left: 0%; /* Espacio entre columnas */
-}
-
-.columna:last-child {
-    margin-left: 5%; /* Elimina el margen derecho de la última columna */
-}
-
-h3 {
-    font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.columna ul li {
-    margin-top: 30px; /* Espacio entre elementos de lista */
-}
-
-ul li a {
-    text-decoration: none;
-    color: #e5e0e0; /* Color de enlace */
-    font-size: 1em; /* Tamaño de fuente para los enlaces */
-    font-family: 'Roboto-Light', sans-serif;
-}
-
-ul li a:hover {
-    text-decoration: none; /* Subraya el enlace al pasar el cursor */
-    color: #ffffff; /* Cambia el color del texto al pasar el cursor */
-}
-
-.special {
-    padding-top: 55px;
-    font-family: 'Roboto-Light', sans-serif;
-    font-size: 1em;
-}
-
-/* Estilos específicos para el ícono de LinkedIn */
-#contacto img.linkedin-icon {
-    width: 22.5px; /* Cambia el tamaño del ícono */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin-right: 10px; /* Agrega un margen a la derecha del ícono */
-    filter: brightness(90%) contrast(84%); /* Cambia el color del ícono */
 }
