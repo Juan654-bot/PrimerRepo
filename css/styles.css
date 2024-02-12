@@ -444,6 +444,8 @@ main {
     .menu-toggle {
         display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
         cursor: pointer;
+        margin-right: 40px;
+        font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
     }
 
     #section1 {
@@ -484,8 +486,8 @@ main {
         transform: translateX(0); /* Restablece la posición original */
     }
 
-    #section2 .button #asesoramiento {
-        padding-bottom: 50px;
+    #section2 .button#asesoramiento {
+        padding-bottom: 25px;
     }
 
     #section3 {
