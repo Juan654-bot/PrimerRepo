@@ -127,3 +127,8 @@ function isFooterVisible() {
 }
 
 var footerShown = false;
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu-toggle + ul'); // Selecciona el elemento ul adyacente al div con clase menu-toggle
+    menu.classList.toggle('show-menu'); // Agrega o quita la clase 'show-menu' para mostrar u ocultar el menú
+}

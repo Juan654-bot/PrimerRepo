@@ -112,6 +112,10 @@ nav ul li:hover .submenu {
     display: block;
 }
 
+.menu-toggle {
+    display: none; /* Oculta el botón de menú en tamaños de pantalla grandes */
+}
+
 main {
     padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
 }
@@ -426,16 +430,24 @@ main {
         padding-left: 1.25%;
     }
 
-    .subtitle {
+    .main-title, .subtitle {
+        display: block; /* Cambia el display a bloque para que se muestren en líneas separadas */
+        text-align: center; /* Alinea los elementos al centro */
+        text-align: left;
         padding-left: 0px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
+        cursor: pointer;
     }
 
     #section1 h4 {
         font-size: 0.8em;
-    }
-
-    nav {
-        display: none;
     }
 
     #section2 {
@@ -456,10 +468,6 @@ main {
         opacity: 0; /* Inicialmente, oculta las columnas */
         transform: translateX(-100px); /* Mueve las columnas hacia la izquierda */
         transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
-    }
-
-    .button {
-
     }
     
     .visible {
