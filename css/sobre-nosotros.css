@@ -112,6 +112,10 @@ nav ul li:hover .submenu {
     display: block;
 }
 
+.menu-toggle, #menu-slideout {
+    display: none; /* Oculta el botón de menú en tamaños de pantalla grandes */
+}
+
 main {
     padding-top: 0px; /* Ajusta el espacio superior para que no esté oculto por el encabezado */
 }
@@ -533,7 +537,7 @@ ul li a:hover {
     }
 
     #section3 {
-        height: 350px;
+        height: 375px;
     }
 
     .content-wrapper {
@@ -559,7 +563,7 @@ ul li a:hover {
     }
 
     #section4 {
-        height: 625px;
+        height: 600px;
     }
 
     #section4 .text-container {

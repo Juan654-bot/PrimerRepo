@@ -15,7 +15,21 @@
                 <span class="subtitle">Servicios Jurídicos</span>
             </a>
         </h1>
-        <nav>
+        <nav id="menu">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div id="menu-overlay"></div> <!-- Capa de fondo semitransparente -->
+            <div id="menu-slideout">
+                <div class="close-button" onclick="closeMenu()">&#10006;</div> <!-- Botón para cerrar el menú -->
+                <ul>
+                    <li><a href="index.html#anchor-section2" class="smooth-scroll" onclick="closeMenu()">Áreas de práctica</a></li>
+                    <li><a href="sobre-nosotros.html" onclick="closeMenu()">Sobre nosotros</a></li>
+                    <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+                    <li><a href="mailto:ulpianoestudio@gmail.com" class="contact-slideout1">ulpianoestudio@gmail.com</a></li>
+                    <li><a href="tel:+543794262937" class="contact-slideout2">+54 379 426-2937</a></li>
+                    <li><a href="https://www.linkedin.com/company/ulpiano/"><img src="img/linkedin-logo.png" alt="LinkedIn" class="linkedin-icon"></a></li>
+                    <li><a href="https://wa.me/543794262937"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="linkedin-icon"></a></li>                    
+                </ul>
+            </div>
             <ul>
                 <!-- <li><a href="index.html">Inicio</a></li> -->
                 <li>
@@ -45,7 +59,7 @@
             <div class="content-wrapper">
                 <div class="map-container">
                     <!-- Aquí se mostrará el mapa -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4209.8436690697945!2d-58.83540942025632!3d-27.467937763894597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca143017d1b%3A0x22c8249b1f35a0fb!2sEstudio%20Jur%C3%ADdico%20Ctes.!5e0!3m2!1ses!2sar!4v1707655740179!5m2!1ses!2sar" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4209.8436690697945!2d-58.83540942025632!3d-27.467937763894597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca143017d1b%3A0x22c8249b1f35a0fb!2sEstudio%20Jur%C3%ADdico%20Ctes.!5e0!3m2!1ses!2sar!4v1707655740179!5m2!1ses!2sar" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
                 </div>
                 <div class="contact-info">
                     <div class="contact-row">
@@ -79,7 +93,7 @@
             <div class="content-wrapper">
                 <div class="form-container">
                     <h2>Agendar cita</h2>
-                    <p>Dejenos sus datos para ser contactado por nuestro equipo<br> y coordinar día/horario de atención.</p>
+                    <p>Dejenos sus datos para ser contactado por nuestro equipo y coordinar día/horario de atención.</p>
                     <form id="contact-form">
                         <div class="form-group">
                             <div class="input-group">
@@ -106,12 +120,12 @@
         </section>                                                           
     </main>
     <footer id="contacto">
-        <div class="columna">
+        <div class="columna" id="Ulpiano-footer">
             <h3>Ulpiano</h3>
             <h2>Tu gestión inteligente</h2>
             <p class="copyright special">&copy; 2024 Ulpiano Servicios Jurídicos</p>
         </div>
-        <div class="columna">
+        <div class="columna" id="Ulpiano-footer">
             <h3><h2>Áreas de práctica</h2></h3>
             <ul>
                 <li><a href="asesoramiento-juridico.html">Asesoramiento Jurídico en Inmuebles y Representación Judicial</a></li>
@@ -129,6 +143,7 @@
                 <li><a href="https://www.linkedin.com/company/ulpiano/"><img src="img/linkedin-logo.png" alt="LinkedIn" class="linkedin-icon"></a>
                     <a href="https://wa.me/543794262937"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="linkedin-icon"></a></li>
                 <!-- Agrega más opciones de contacto según sea necesario -->
+                <p class="copyright special2">&copy; 2024 Ulpiano Servicios Jurídicos</p>
             </ul>
         </div>
     </footer>
