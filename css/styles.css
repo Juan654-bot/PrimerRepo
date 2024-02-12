@@ -447,7 +447,7 @@ main {
     }
 
     #section1 {
-        height: 750px;
+        height: 800px;
     }
 
     #section1 h4 {
@@ -479,8 +479,12 @@ main {
         transform: translateX(0); /* Restablece la posición original */
     }
 
+    #section2 .button {
+        padding-bottom: 17.5px;
+    }
+
     #section3 {
-        height: 325px;
+        height: 350px;
     }
 
     .content-wrapper {
