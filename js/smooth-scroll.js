@@ -141,3 +141,26 @@ function closeMenu() {
     var menu = document.getElementById('menu-slideout');
     menu.style.width = '0';
 }
+
+function toggleMenu() {
+    var menuSlideout = document.getElementById('menu-slideout');
+    var menuOverlay = document.getElementById('menu-overlay');
+    
+    // Alternar visibilidad del menú y la capa de fondo semitransparente
+    if (menuSlideout.style.width === '80%') {
+        menuSlideout.style.width = '0';
+        menuOverlay.style.display = 'none';
+    } else {
+        menuSlideout.style.width = '80%';
+        menuOverlay.style.display = 'block';
+    }
+}
+
+function closeMenu() {
+    var menuSlideout = document.getElementById('menu-slideout');
+    var menuOverlay = document.getElementById('menu-overlay');
+    
+    // Ocultar el menú-slideout y la capa de fondo semitransparente
+    menuSlideout.style.width = '0';
+    menuOverlay.style.display = 'none';
+}
