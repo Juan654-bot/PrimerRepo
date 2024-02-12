@@ -501,7 +501,7 @@ ul li a:hover {
     }
 
     .main-title {
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
 
     .main-title, .subtitle {
@@ -532,7 +532,7 @@ ul li a:hover {
     width: 0; /* Cambiado a 0 inicialmente */
     background-color: #ffffff; /* Color de fondo del menú */
     overflow-x: hidden;
-    transition: width 0.5s; /* Transición suave al abrir o cerrar el menú */
+    transition: width 0.25s; /* Transición suave al abrir o cerrar el menú */
     z-index: 1001; /* Asegura que esté por encima del encabezado */
 }
 
@@ -540,6 +540,7 @@ ul li a:hover {
 #menu-slideout ul {
     display: block;
     padding: 20px;
+    padding-top: 30px;
     text-align: left;
     /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
 }
@@ -550,6 +551,15 @@ ul li a:hover {
     margin-top: 15px;
     padding-right: 100px;
     /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
+}
+
+/* Estilo para el botón de cierre */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    color: #000;
 }
 
     #section1 {
