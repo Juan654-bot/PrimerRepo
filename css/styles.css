@@ -479,12 +479,12 @@ main {
         transform: translateX(0); /* Restablece la posición original */
     }
 
-    #section2 .button {
-        padding-bottom: 17.5px;
+    #section2 .button #asesoramiento {
+        padding-bottom: 50px;
     }
 
     #section3 {
-        height: 350px;
+        height: 375px;
     }
 
     .content-wrapper {
