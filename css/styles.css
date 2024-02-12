@@ -574,7 +574,6 @@ ul li a:hover {
 #menu-slideout ul li .whatsapp-icon {
     width: 24px; /* Ancho deseado para los íconos */
     height: 24px; /* Alto deseado para los íconos */
-    margin-left: -50px;
 }
 
 /* Estilo para el botón de cierre */
