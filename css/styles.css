@@ -446,12 +446,16 @@ main {
         cursor: pointer;
     }
 
+    #section1 {
+        height: 715px;
+    }
+
     #section1 h4 {
         font-size: 0.8em;
     }
 
     #section2 {
-        height: 1200px;
+        height: 1175px;
     }
 
     .section-container {
@@ -476,7 +480,7 @@ main {
     }
 
     #section3 {
-        height: 350px;
+        height: 325px;
     }
 
     .content-wrapper {
