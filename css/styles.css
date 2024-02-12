@@ -112,7 +112,7 @@ nav ul li:hover .submenu {
     display: block;
 }
 
-.menu-toggle {
+.menu-toggle, #menu-slideout {
     display: none; /* Oculta el botón de menú en tamaños de pantalla grandes */
 }
 
@@ -517,6 +517,36 @@ ul li a:hover {
         font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
     }
 
+/* Estilo para el menú desplegable */
+#menu-slideout {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0; /* Cambiado a 0 inicialmente */
+    background-color: #ffffff; /* Color de fondo del menú */
+    overflow-x: hidden;
+    transition: width 0.5s; /* Transición suave al abrir o cerrar el menú */
+    z-index: 1001; /* Asegura que esté por encima del encabezado */
+}
+
+/* Añade estilo adicional para el contenido del menú si es necesario */
+#menu-slideout ul {
+    display: block;
+    padding: 20px;
+    text-align: left;
+    /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
+}
+
+#menu-slideout ul li a{
+    color: #000;
+    font-size: 1.05em;
+    margin-top: 15px;
+    padding-right: 100px;
+    /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
+}
+
     #section1 {
         height: 850px;
     }
@@ -599,6 +629,6 @@ ul li a:hover {
 
     .special2 {
         display: block;
-        margin-top: 45px;
+        margin-top: 50px;
     }
 }
