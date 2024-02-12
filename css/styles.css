@@ -539,7 +539,7 @@ ul li a:hover {
 
 /* Añade estilo adicional para el contenido del menú si es necesario */
 #menu-slideout ul {
-    display: block;
+    display: inline-block;
     padding: 20px;
     padding-top: 30px;
     text-align: left;
@@ -550,7 +550,6 @@ ul li a:hover {
     color: #000;
     font-size: 1.05em;
     margin-bottom: 15px;
-    padding-right: 100px;
     /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
 }
 
@@ -564,6 +563,18 @@ ul li a:hover {
 #menu-slideout ul li .contact-slideout2 {
     font-size: 1em;
     font-family: 'Roboto-Regular', sans-serif;
+}
+
+/* Estilos para los enlaces que contienen los íconos */
+#menu-slideout ul li .linkedin-icon {
+    width: 24px; /* Ancho deseado para los íconos */
+    height: 24px; /* Alto deseado para los íconos */
+}
+
+#menu-slideout ul li .whatsapp-icon {
+    width: 24px; /* Ancho deseado para los íconos */
+    height: 24px; /* Alto deseado para los íconos */
+    margin-left: -50px;
 }
 
 /* Estilo para el botón de cierre */
@@ -585,13 +596,6 @@ ul li a:hover {
     background-color: rgba(0, 0, 0, 0.273); /* Color semitransparente */
     display: none; /* Ocultar inicialmente */
     z-index: 1000; /* Asegura que esté por encima del contenido */
-}
-
-/* Estilos para los enlaces que contienen los íconos */
-#menu-slideout img.linkedin-icon{
-    width: 24px; /* Ancho deseado para los íconos */
-    height: auto; /* Alto deseado para los íconos */
-    padding-right: 0px; /* Espacio entre los íconos */
 }
 
     #section1 {
