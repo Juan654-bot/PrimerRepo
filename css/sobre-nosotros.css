@@ -442,7 +442,7 @@ ul li a:hover {
     .menu-toggle {
         display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
         cursor: pointer;
-        margin-right: 63.5px;
+        margin-right: 40px;
         font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
     }
 
@@ -500,7 +500,7 @@ ul li a:hover {
 .close-button {
     position: absolute;
     top: 20px;
-    right: 85px;
+    right: 25px;
     cursor: pointer;
     color: #000;
 }
@@ -526,7 +526,7 @@ ul li a:hover {
     }
     
     #section1 h4 {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     #section2 {
@@ -572,11 +572,13 @@ ul li a:hover {
     }
 
     #section4 .text-container::before {
-        display: none;
+        top: -40px; /* Posición antes del texto */
+        left: -20px; /* Ajuste horizontal */
     }
     
     #section4 .text-container::after {
-        display: none;
+        bottom: -60px; /* Posición después del texto */
+        right: -20px; /* Ajuste horizontal */
     }
 
     #contacto {
