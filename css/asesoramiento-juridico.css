@@ -139,12 +139,12 @@ main {
 }
 
 .text-container h2 {
-    font-size: 1.9em;
+    font-size: 1.6em;
 }
 
 .text-container p {
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 /* Estilos para el pie de página */
