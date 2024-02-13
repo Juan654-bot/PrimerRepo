@@ -526,7 +526,7 @@ ul li a:hover {
     }
     
     #section1 h4 {
-        font-size: 0.6em;
+        font-size: 0.65em;
     }
 
     #section2 {
@@ -572,12 +572,12 @@ ul li a:hover {
     }
 
     #section4 .text-container::before {
-        top: -40px; /* Posición antes del texto */
+        top: -50px; /* Posición antes del texto */
         left: -20px; /* Ajuste horizontal */
     }
     
     #section4 .text-container::after {
-        bottom: -60px; /* Posición después del texto */
+        bottom: -70px; /* Posición después del texto */
         right: -20px; /* Ajuste horizontal */
     }
 
