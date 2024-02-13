@@ -415,13 +415,13 @@ ul {
 
 .columna ul li {
     margin-top: 30px; /* Espacio entre elementos de lista */
-    max-width: 350px;
+    max-width: 325px;
 }
 
 ul li a {
     text-decoration: none;
     color: #e5e0e0; /* Color de enlace */
-    font-size: 1em; /* Tamaño de fuente para los enlaces */
+    font-size: 0.9em; /* Tamaño de fuente para los enlaces */
     font-family: 'Roboto-Light', sans-serif;
 }
 
@@ -433,13 +433,13 @@ ul li a:hover {
 .special {
     padding-top: 55px;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .special2 {
     display: none;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 /* Estilos específicos para el ícono de LinkedIn */
