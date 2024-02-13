@@ -391,7 +391,7 @@ footer {
     color: #e5e0e0;
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
-    padding: 20px 0; /* Agrega un poco de espacio arriba y abajo */
+    padding-bottom: 20px;
     padding-left: 12%;
 }
 
@@ -415,6 +415,7 @@ ul {
 
 .columna ul li {
     margin-top: 30px; /* Espacio entre elementos de lista */
+    max-width: 350px;
 }
 
 ul li a {
