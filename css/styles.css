@@ -616,7 +616,7 @@ ul li a:hover {
 
     #anchor-section2 {
         position: relative; /* Cambia la posición del elemento */
-        top: -715px; /* Mueve el elemento hacia arriba 385px */
+        top: -700px; /* Mueve el elemento hacia arriba 385px */
     }
 
     .section-container {
