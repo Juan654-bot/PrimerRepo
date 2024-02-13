@@ -578,15 +578,17 @@ ul li a:hover {
 
     #section2 .contact-info {
         margin-left: -85px;
+        order: 1; /* Cambia el orden, colocando los datos de contacto primero */
     }
 
     #section2 .map-container {
         margin: 0px;
         margin-left: -85px;
+        order: 2; /* Coloca el mapa después de los datos de contacto */
     }
 
     #section2 .maps {
-        max-width: 375px;
+        width: 135%;
     }
 
     #section3 {
