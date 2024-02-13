@@ -225,7 +225,7 @@ main {
 }
 
 #section2 .column-left p{
-    font-size: 0.575em; /* Reducir el tamaño de fuente del texto */
+    font-size: 0.5625em; /* Reducir el tamaño de fuente del texto */
     font-family: 'Roboto-Light', sans-serif;
     text-align: left;
 }
