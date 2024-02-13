@@ -574,13 +574,13 @@ ul li a:hover {
     #section4 .text-container::before {
         top: -40px; /* Posición antes del texto */
         left: -20px; /* Ajuste horizontal */
-        font-size: 60px; /* Tamaño de las comillas */
+        font-size: 50px; /* Tamaño de las comillas */
     }
     
     #section4 .text-container::after {
         bottom: -60px; /* Posición después del texto */
         right: -20px; /* Ajuste horizontal */
-        font-size: 60px; /* Tamaño de las comillas */
+        font-size: 50px; /* Tamaño de las comillas */
     }
 
     #contacto {
