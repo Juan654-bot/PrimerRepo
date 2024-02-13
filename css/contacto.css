@@ -501,13 +501,12 @@ ul li a:hover {
 /* Añade estilo adicional para el contenido del menú si es necesario */
 #menu-slideout ul {
     display: inline-block;
-    padding: 20px;
     padding-top: 30px;
     text-align: left;
     /* Agrega aquí cualquier otro estilo necesario para el contenido del menú */
 }
 
-#menu-slideout ul li a{
+#menu-slideout ul li .menu-slideout1 {
     color: #000;
     font-size: 1.05em;
     padding-right: 70px;
@@ -516,6 +515,7 @@ ul li a:hover {
 }
 
 #menu-slideout ul li .contact-slideout1 {
+    color: #000;
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 1em;
@@ -523,12 +523,15 @@ ul li a:hover {
 }
 
 #menu-slideout ul li .contact-slideout2 {
+    color: #000;
     font-size: 1em;
     font-family: 'Roboto-Regular', sans-serif;
+    padding-right: 70px;
 }
 
 /* Estilos para los enlaces que contienen los íconos */
 #menu-slideout ul li .linkedin-icon {
+    margin-right: -40px;
     width: 24px; /* Ancho deseado para los íconos */
     height: 24px; /* Alto deseado para los íconos */
 }
@@ -588,7 +591,7 @@ ul li a:hover {
     }
 
     #section2 .maps {
-        width: 125%;
+        width: 130%;
     }
 
     #section3 {

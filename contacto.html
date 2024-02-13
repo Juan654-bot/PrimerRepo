@@ -17,13 +17,13 @@
         </h1>
         <nav id="menu">
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            <div id="menu-overlay"></div> <!-- Capa de fondo semitransparente -->
+            <div id="menu-overlay" onclick="closeMenu()"></div> <!-- Capa de fondo semitransparente -->
             <div id="menu-slideout">
                 <div class="close-button" onclick="closeMenu()">&#10006;</div> <!-- Botón para cerrar el menú -->
                 <ul>
-                    <li><a href="index.html#anchor-section2">Áreas de práctica</a></li>
-                    <li><a href="sobre-nosotros.html" onclick="closeMenu()">Sobre nosotros</a></li>
-                    <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+                    <li><a href="index.html#anchor-section2" class="menu-slideout1">Áreas de práctica</a></li>
+                    <li><a href="sobre-nosotros.html" onclick="closeMenu()" class="menu-slideout1">Sobre nosotros</a></li>
+                    <li><a href="contacto.html" onclick="closeMenu()" class="menu-slideout1">Contacto</a></li>
                     <li><a href="mailto:ulpianoestudio@gmail.com" class="contact-slideout1">ulpianoestudio@gmail.com</a></li>
                     <li><a href="tel:+543794262937" class="contact-slideout2">+54 379 426-2937</a></li>
                     <li><a href="https://www.linkedin.com/company/ulpiano/"><img src="img/linkedin-logo.png" alt="LinkedIn" class="linkedin-icon"></a></li>
