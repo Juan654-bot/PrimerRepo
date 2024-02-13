@@ -571,7 +571,7 @@ ul li a:hover {
     }
 
     #section2 {
-        height: 850px;
+        height: 900px;
         display: flex; /* Utilizamos flexbox para el diseño */
         flex-direction: column; /* Alinea los elementos en columna */
     }
