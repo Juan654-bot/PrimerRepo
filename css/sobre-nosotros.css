@@ -547,6 +547,7 @@ ul li a:hover {
     }
 
     .image-container {
+        width: 320px;
         margin-right: 0;
         margin-bottom: 20px; /* Espacio entre la imagen y el formulario en dispositivos móviles */
     }
