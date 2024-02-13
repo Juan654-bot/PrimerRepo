@@ -526,7 +526,7 @@ ul li a:hover {
     }
     
     #section1 h4 {
-        font-size: 0.65em;
+        font-size: 0.675em;
     }
 
     #section2 {
@@ -574,11 +574,13 @@ ul li a:hover {
     #section4 .text-container::before {
         top: -50px; /* Posición antes del texto */
         left: -20px; /* Ajuste horizontal */
+        font-size: 60px; /* Tamaño de las comillas */
     }
     
     #section4 .text-container::after {
         bottom: -70px; /* Posición después del texto */
         right: -20px; /* Ajuste horizontal */
+        font-size: 60px; /* Tamaño de las comillas */
     }
 
     #contacto {
