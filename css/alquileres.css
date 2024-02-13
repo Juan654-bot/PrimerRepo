@@ -242,7 +242,7 @@ ul li a:hover {
     .menu-toggle {
         display: block; /* Muestra el botón de menú en tamaños de pantalla pequeños */
         cursor: pointer;
-        margin-right: 40px;
+        margin-right: 32.5px;
         font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
     }
 
