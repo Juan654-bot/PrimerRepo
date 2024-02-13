@@ -574,12 +574,12 @@ ul li a:hover {
     }
 
     #section4 .text-container {
-        margin: 40px;
+        margin: 35px;
     }
 
     #section4 .text-container::before {
         top: -30px; /* Posición antes del texto */
-        left: -20px; /* Ajuste horizontal */
+        left: -25px; /* Ajuste horizontal */
         font-size: 50px; /* Tamaño de las comillas */
     }
     
