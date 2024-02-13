@@ -588,6 +588,7 @@ ul li a:hover {
     right: 25px;
     cursor: pointer;
     color: #000;
+    font-size: 0.9em;
 }
 
 /* Estilo para la capa de fondo semitransparente */

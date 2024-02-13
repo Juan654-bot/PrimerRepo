@@ -543,6 +543,7 @@ ul li a:hover {
     right: 25px;
     cursor: pointer;
     color: #000;
+    font-size: 0.9em;
 }
 
 /* Estilo para la capa de fondo semitransparente */
@@ -591,7 +592,7 @@ ul li a:hover {
     }
 
     #section2 .maps {
-        width: 130%;
+        width: 127.5%;
     }
 
     #section3 {
