@@ -130,7 +130,7 @@ main {
 }
 
 #section1 {
-    height: 695px;
+    height: 730px;
     position: relative; /* Asegura que el z-index funcione correctamente */
     z-index: 1; /* Valor menor para que la animación no cubra el encabezado */
     overflow: hidden; /* Oculta cualquier parte de la imagen que se salga de los límites de la sección */
