@@ -622,6 +622,10 @@ ul li a:hover {
         top: -700px; /* Mueve el elemento hacia arriba 385px */
     }
 
+    #section2 .button {
+        height: 225px; /* Altura fija para los botones */
+    }
+
     .section-container {
         flex-direction: column;
         align-items: center;
