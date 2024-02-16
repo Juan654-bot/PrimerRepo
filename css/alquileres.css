@@ -48,14 +48,13 @@ header h1 a {
 
 /* Estilos para el título principal */
 .main-title {
-    font-size: 1.3em; /* Tamaño de fuente para el título principal */
+    font-size: 0.85em; /* Tamaño de fuente para el título principal */
 }
 
 /* Estilos para el subtítulo */
 .subtitle {
-    font-size: 0.7em; /* Tamaño de fuente para el subtítulo */
+    font-size: 0.85em; /* Tamaño de fuente para el subtítulo */
     color: #888; /* Color de texto más claro para el subtítulo */
-    padding-left: 7px;
 }
 
 nav {
