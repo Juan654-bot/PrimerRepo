@@ -1,0 +1,5 @@
+[runtime]
+name = "static"
+
+[command]
+start = "echo 'Static site running'"
