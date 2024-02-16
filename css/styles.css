@@ -16,7 +16,7 @@ body {
 header {
     background-color: rgba(51, 51, 51, 0.886); /* Color de fondo transparente */
     color: #e5e0e0;
-    padding: 20px;
+    padding: 17.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ header h1 a {
   
   .opaque {
     background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
-    padding: 17.5px; /* Ajusta el padding según tus necesidades */
+    padding: 15px; /* Ajusta el padding según tus necesidades */
   }  
 
 /* Estilos para el título principal */
@@ -208,7 +208,7 @@ main {
 
 #anchor-section2 {
     position: relative; /* Cambia la posición del elemento */
-    top: -397.5px; /* Mueve el elemento hacia arriba 385px */
+    top: -395px; /* Mueve el elemento hacia arriba 385px */
 }
 
 #section2 .section-container {
@@ -462,7 +462,6 @@ ul {
 
 .columna ul li {
     margin-top: 30px; /* Espacio entre elementos de lista */
-    max-width: 325px;
 }
 
 ul li a {
@@ -647,10 +646,6 @@ ul li a:hover {
     .visible {
         opacity: 1; /* Muestra las columnas */
         transform: translateX(0); /* Restablece la posición original */
-    }
-
-    #section2 .button#asesoramiento {
-        padding-bottom: 50px;
     }
 
     #section3 {

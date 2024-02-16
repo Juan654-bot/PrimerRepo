@@ -16,7 +16,7 @@ body {
 header {
     background-color: rgba(51, 51, 51); /* Color de fondo transparente */
     color: #e5e0e0;
-    padding: 20px;
+    padding: 17.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ header h1 a {
   
   .opaque {
     background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
-    padding: 17.5px; /* Ajusta el padding según tus necesidades */
+    padding: 15px; /* Ajusta el padding según tus necesidades */
   }  
 
 /* Estilos para el título principal */
@@ -414,7 +414,6 @@ ul {
 
 .columna ul li {
     margin-top: 30px; /* Espacio entre elementos de lista */
-    max-width: 325px;
 }
 
 ul li a {
