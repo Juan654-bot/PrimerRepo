@@ -185,7 +185,7 @@ main {
 
 #section2 .section-container {
     max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin: 25px; /* Centra el contenido horizontalmente */
 }
 
 #section2 .column-center {
@@ -304,7 +304,7 @@ main {
 
 #section4 .section-container {
     max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin: 60px; /* Centra el contenido horizontalmente */
 }
 
 #section4 .column-center {
@@ -536,6 +536,10 @@ ul li a:hover {
         height: 500px;
     }
 
+    #section2 .section-container {
+        margin: auto; /* Centra el contenido horizontalmente */
+    }
+
     #section2 .column-center{
         margin: 25px;
     }
@@ -569,6 +573,10 @@ ul li a:hover {
 
     #section4 {
         height: 600px;
+    }
+
+    #section4 .section-container {
+        margin: auto; /* Centra el contenido horizontalmente */
     }
 
     #section4 .text-container {

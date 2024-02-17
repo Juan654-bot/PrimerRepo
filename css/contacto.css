@@ -254,7 +254,7 @@ main {
 
 #section3 .section-container {
     max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin: 25px; /* Centra el contenido horizontalmente */
 }
 
 #section3 .column-center {
@@ -595,6 +595,10 @@ ul li a:hover {
 
     #section3 {
         height: 250px;
+    }
+
+    #section3 .section-container {
+        margin: auto; /* Centra el contenido horizontalmente */
     }
 
     #section3 .text-container {
