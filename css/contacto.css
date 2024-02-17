@@ -594,7 +594,7 @@ ul li a:hover {
     }
 
     #section3 {
-        height: 250px;
+        height: auto;
     }
 
     #section3 .section-container {

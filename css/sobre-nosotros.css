@@ -533,7 +533,7 @@ ul li a:hover {
     }
 
     #section2 {
-        height: 500px;
+        height: auto;
     }
 
     #section2 .section-container {
@@ -572,7 +572,7 @@ ul li a:hover {
     }
 
     #section4 {
-        height: 600px;
+        height: auto;
     }
 
     #section4 .section-container {
