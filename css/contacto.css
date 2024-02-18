@@ -372,7 +372,7 @@ main {
 }
 
 #section4 button {
-    background-color: #111625f9;
+    background-color: #111625f2;
     color: white;
     padding: 12px 0px;
     margin: 8px 0;
@@ -382,6 +382,10 @@ main {
     width: 19%;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 0.45em;
+}
+
+#section4 button:hover {
+    background-color: #111625;
 }
 
 footer {
