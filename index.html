@@ -105,23 +105,51 @@
                 <div class="form-container">
                     <h2>Formulario de contacto</h2>
                     <p>Por consultas o inquietudes completá el siguiente formulario y un miembro de nuestro estudio responderá a la brevedad.</p>
-                    <form id="contact-form" action="https://ulpiano-asesor.koyeb.app/enviar-correo" method="post">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
-                            </div>
-                            <div class="input-group">
-                                <input type="text" id="whatsapp" name="whatsapp" placeholder="WhatsApp">
-                            </div>
-                            <div class="input-group">
-                                <input type="email" id="email" name="email" required placeholder="E-mail">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comenta brevemente tu caso..."></textarea>
-                        </div>
-                        <button type="submit">ENVIAR</button>
-                    </form>
+<form id="contact-form" onsubmit="submitForm(event)">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+        </div>
+        <div class="input-group">
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="WhatsApp">
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" name="email" required placeholder="E-mail">
+        </div>
+    </div>
+    <div class="form-group">
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Comenta brevemente tu caso..."></textarea>
+    </div>
+    <button type="submit">ENVIAR</button>
+</form>
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Evitar el envío del formulario por defecto
+
+        // Obtener los valores del formulario
+        const formData = {
+            nombre: document.getElementById('nombre').value,
+            whatsapp: document.getElementById('whatsapp').value,
+            email: document.getElementById('email').value,
+            mensaje: document.getElementById('mensaje').value
+        };
+
+        // Enviar los datos en formato JSON al servidor
+        fetch('https://ulpiano-asesor.koyeb.app/enviar-correo', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data); // Mostrar la respuesta del servidor en la consola
+            // Aquí puedes realizar cualquier acción adicional según la respuesta del servidor
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
                 </div>
             </div>
         </section>                                                           
