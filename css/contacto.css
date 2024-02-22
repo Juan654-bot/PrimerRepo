@@ -247,7 +247,7 @@ main {
 }
 
 #section3 {
-    height: 200px;
+    height: 175px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
@@ -603,6 +603,8 @@ ul li a:hover {
 
     #section3 .section-container {
         margin: auto; /* Centra el contenido horizontalmente */
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
     }
 
     #section3 .text-container {
