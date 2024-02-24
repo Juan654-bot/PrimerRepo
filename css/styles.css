@@ -25,6 +25,7 @@ header {
     left: 0;
     width: 100%; /* Ajusta el ancho al 100% de la ventana */
     z-index: 1000; /* Asegura que esté por encima de la sección */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
 }
 
 header h1 {
