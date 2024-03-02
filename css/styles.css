@@ -1,22 +1,28 @@
 @font-face {
+    font-family: 'Forum';
+    src: url('../fonts/Forum-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: Roboto-Light;
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Forum', sans-serif; /* Fallback a fuentes sans-serif si Roboto no está disponible */
 }
 
 header {
     background-color: rgba(51, 51, 51, 0.886); /* Color de fondo transparente */
     color: #e5e0e0;
-    padding: 17.5px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +50,7 @@ header h1 a {
   
   .opaque {
     background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
-    padding: 15px; /* Ajusta el padding según tus necesidades */
+    padding: 12.5px; /* Ajusta el padding según tus necesidades */
   }  
 
 /* Estilos para el título principal */
@@ -106,6 +112,10 @@ nav ul .submenu li {
     padding-top: 15px;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.servicios:hover {
+    color: #e5e0e0; /* Color de enlace */
 }
 
 nav ul li:hover .submenu {
@@ -175,8 +185,15 @@ main {
     border-radius: 5px; /* Aplica bordes redondeados */
 }
 
+#section1 .content-wrapper h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
 #section1 .content-wrapper h4 {
-    font-size: 0.95em;
+    margin-top: 20px;
+    font-size: 0.75em;
 }
 
 #section1 .buttons {
@@ -190,7 +207,7 @@ main {
     border: 2px solid rgba(51, 51, 51, 0.886); /* Añadimos un borde fino */
     color: #e5e0e0; /* Color del texto del botón */
     font-family: 'Roboto-Regular', sans-serif;
-    font-size: 0.45em;
+    font-size: 0.425em;
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px; /* Espacio entre los botones */
@@ -210,7 +227,7 @@ main {
 
 #anchor-section2 {
     position: relative; /* Cambia la posición del elemento */
-    top: -395px; /* Mueve el elemento hacia arriba 385px */
+    top: -387.5px; /* Mueve el elemento hacia arriba 385px */
 }
 
 #section2 .section-container {
@@ -236,23 +253,29 @@ main {
 }
 
 .column-left {
-    opacity: 0; /* Inicialmente, oculta las columnas */
-    transform: translateX(-100px); /* Mueve las columnas hacia la izquierda */
-    transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
+    margin-right: 2.5%;
+}
+
+
+
+/*.column-left {
+    opacity: 0; /* Inicialmente, oculta las columnas 
+    transform: translateX(-100px); /* Mueve las columnas hacia la izquierda 
+    transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave 
     margin-right: 2.5%;
 }
 
 .column-center {
-    opacity: 0; /* Inicialmente, oculta las columnas */
-    transform: translateX(100px); /* Mueve las columnas hacia la izquierda */
-    transition: opacity 0.5s, transform 0.475s; /* Agrega una transición suave */
+    opacity: 0; /* Inicialmente, oculta las columnas 
+    transform: translateX(100px); /* Mueve las columnas hacia la izquierda 
+    transition: opacity 0.5s, transform 0.475s; /* Agrega una transición suave 
 }
 
 .column-right {
-    opacity: 0; /* Inicialmente, oculta las columnas */
-    transform: translateX(100px); /* Mueve las columnas hacia la izquierda */
-    transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */
-}
+    opacity: 0; /* Inicialmente, oculta las columnas
+    transform: translateX(100px); /* Mueve las columnas hacia la izquierda
+    transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave
+} */
 
 .column-center p, .column-right p{
     font-size: 0.9em; /* Reducir el tamaño de fuente del texto */
@@ -271,9 +294,9 @@ main {
 
 #section2 .button {
     display: block;
-    width: 300px; /* Ancho fijo para los botones */
-    height: 200px; /* Altura fija para los botones */
-    margin-bottom: 10px; /* Espacio entre los botones */
+    width: 325px; /* Ancho fijo para los botones */
+    height: 225px; /* Altura fija para los botones */
+    margin: 25px 0px; /* Espacio entre los botones */
     padding-top: 2.5px;
     padding-left: 25px;
     padding-right: 25px;
@@ -283,7 +306,7 @@ main {
     border: 0px solid #333; /* Borde del botón */
     border-radius: 3.75px; /* Borde redondeado */
     text-align: left; /* Centrar texto */
-    font-size: 0.5em; /* Tamaño de fuente del texto */
+    font-size: 0.51em; /* Tamaño de fuente del texto */
     text-decoration: none;
     overflow: hidden; /* Ocultar el contenido que excede el ancho del botón */
 }
@@ -324,7 +347,7 @@ main {
 }
 
 #section3 {
-    height: 475px; /* Cambiar a altura automática */
+    height: 500px; /* Cambiar a altura automática */
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #e5e0e04e;
@@ -445,6 +468,7 @@ footer {
     color: #e5e0e0;
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
+    padding-top: 2.5px;
     padding-bottom: 20px;
     padding-left: 12%;
 }
@@ -460,6 +484,10 @@ footer {
 
 h3 {
     font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+.rol {
+    color: #888; /* Color para "Asesor" */
 }
 
 ul {
@@ -621,12 +649,12 @@ ul li a:hover {
     }
 
     #section2 {
-        height: 1200px;
+        height: auto;
     }
 
     #anchor-section2 {
         position: relative; /* Cambia la posición del elemento */
-        top: -700px; /* Mueve el elemento hacia arriba 385px */
+        top: -730px; /* Mueve el elemento hacia arriba 385px */
     }
 
     #section2 .button {
@@ -648,7 +676,7 @@ ul li a:hover {
     }
 
     .column-right {
-        margin-top: -15px;
+        margin-top: -37.5px;
         opacity: 0; /* Inicialmente, oculta las columnas */
         transform: translateY(100px); /* Mueve las columnas hacia la izquierda */
         transition: opacity 0.5s, transform 0.5s; /* Agrega una transición suave */

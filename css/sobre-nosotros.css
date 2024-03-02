@@ -1,22 +1,27 @@
 @font-face {
+    font-family: 'Forum';
+    src: url('../fonts/Forum-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: Roboto-Light;
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Forum', sans-serif; /* Fallback a fuentes sans-serif si Roboto no está disponible */
 }
-
 header {
     background-color: rgba(51, 51, 51); /* Color de fondo transparente */
     color: #e5e0e0;
-    padding: 17.5px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +49,7 @@ header h1 a {
   
   .opaque {
     background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
-    padding: 15px; /* Ajusta el padding según tus necesidades */
+    padding: 12.5px; /* Ajusta el padding según tus necesidades */
   }  
 
 /* Estilos para el título principal */
@@ -108,6 +113,10 @@ nav ul .submenu li {
     padding-right: 0px;
 }
 
+.servicios:hover {
+    color: #e5e0e0; /* Color de enlace */
+}
+
 nav ul li:hover .submenu {
     display: block;
 }
@@ -138,7 +147,7 @@ main {
 }
 
 #section1 h4 {
-    font-size: 0.85em;
+    font-size: 0.75em;
 }
 
 #section1::before {
@@ -180,7 +189,7 @@ main {
 }
 
 #section2 {
-    height: 650px;
+    height: 625px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
@@ -192,6 +201,25 @@ main {
 
 #section2 .column-center {
     text-align: center; /* Centra el texto */
+}
+
+.container {
+    display: flex;
+}
+
+.mission,
+.vision {
+    flex: 1;
+    padding: 0 0px;
+}
+
+/*.mission {
+     border-right: 1px solid #ccc;  Línea divisoria entre las columnas 
+}*/
+
+.mission h2,
+.vision h2 {
+    margin-top: 0;
 }
 
 #section2 .column-center h2 {
@@ -237,7 +265,7 @@ main {
 }
 
 #section3 {
-    height: 250px; /* Altura automática */
+    height: 275px; /* Altura automática */
     padding: 75px 20px;
     display: flex;
     justify-content: center;
@@ -269,7 +297,7 @@ main {
 }
 
 .image-container img {
-    max-width: 50%;
+    max-width: 52.5%;
     height: auto;
     width: 100%;
     border-radius: 0.835%; /* Para hacer la imagen redonda */
@@ -356,6 +384,7 @@ footer {
     color: #e5e0e0;
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
+    padding-top: 2.5px;
     padding-bottom: 20px;
     padding-left: 12%;
 }
@@ -371,6 +400,10 @@ footer {
 
 h3 {
     font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+.rol {
+    color: #888; /* Color para "Asesor" */
 }
 
 ul {
@@ -538,6 +571,15 @@ ul li a:hover {
     #section2 {
         height: auto;
     }
+
+    .container {
+        display: block;
+    }
+
+    .mission h2,
+.vision h2 {
+    margin-top: 25px;
+}
 
     #section2 .section-container {
         margin: auto; /* Centra el contenido horizontalmente */

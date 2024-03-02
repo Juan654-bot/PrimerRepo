@@ -1,22 +1,28 @@
 @font-face {
+    font-family: 'Forum';
+    src: url('../fonts/Forum-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: Roboto-Light;
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Roboto-Regular;
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Forum', sans-serif; /* Fallback a fuentes sans-serif si Roboto no está disponible */
 }
 
 header {
     background-color: rgba(51, 51, 51); /* Color de fondo transparente */
     color: #e5e0e0;
-    padding: 17.5px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +50,7 @@ header h1 a {
   
   .opaque {
     background-color: rgb(51, 51, 51); /* Cambia el valor de opacidad según tus preferencias */
-    padding: 15px; /* Ajusta el padding según tus necesidades */
+    padding: 12.5px; /* Ajusta el padding según tus necesidades */
   }  
 
 /* Estilos para el título principal */
@@ -108,6 +114,10 @@ nav ul .submenu li {
     padding-right: 0px;
 }
 
+.servicios:hover {
+    color: #e5e0e0; /* Color de enlace */
+}
+
 nav ul li:hover .submenu {
     display: block;
 }
@@ -138,7 +148,7 @@ main {
 }
 
 #section1 h4 {
-    font-size: 0.85em;
+    font-size: 0.75em;
 }
 
 #section1::before {
@@ -276,12 +286,13 @@ main {
 }
 
 #section4 {
-    height: 475px; /* Cambiar a altura automática */
+    height: 500px; /* Cambiar a altura automática */
     padding-top: 75px;
     padding-bottom: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e5e0e04e;
 }
 
 #section4 .content-wrapper {
@@ -396,6 +407,7 @@ footer {
     color: #e5e0e0;
     display: flex;
     justify-content: center; /* Centra las columnas horizontalmente */
+    padding-top: 2.5px;
     padding-bottom: 20px;
     padding-left: 12%;
 }
@@ -411,6 +423,10 @@ footer {
 
 h3 {
     font-size: 2.5em; /* Tamaño de fuente para los títulos de columna */
+}
+
+.rol {
+    color: #888; /* Color para "Asesor" */
 }
 
 ul {
