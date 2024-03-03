@@ -397,9 +397,9 @@ main {
     font-size: 0.45em;
 }
 
-#section4 button:hover {
+/*#section4 button:hover {
     background-color: #111625;
-}
+}*/
 
 footer {
     height: 300px;

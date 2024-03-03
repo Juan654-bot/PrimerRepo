@@ -216,6 +216,8 @@ main {
 #section1 .button:hover {
     background-color: rgba(51, 51, 51, 0.886); /* Cambio de color del fondo al pasar el mouse sobre el botón */
     color: #fff; /* Cambio de color del texto al pasar el mouse sobre el botón */
+    transform: scale(1.015, 1.015);
+    transition: transform 0.25s;
 }
 
 #section2 {
@@ -318,6 +320,8 @@ main {
 
 #section2 .button:hover {
     background-color: #111625; /* Cambio de color al pasar el mouse sobre el botón */
+    transform: scale(1.005, 1.005);
+    /*transition: transform 0.25s;*/
 }
 
 .background-casa {
@@ -458,9 +462,9 @@ main {
 }
 
 
-#section3 button:hover {
-    background-color: #111625; /* Cambio de color al pasar el mouse sobre el botón */
-}
+/*#section3 button:hover {
+    background-color: #111625; /* Cambio de color al pasar el mouse sobre el botón 
+}*/
 
 footer {
     height: 300px;
