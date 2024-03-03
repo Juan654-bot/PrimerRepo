@@ -335,7 +335,7 @@ main {
 
 #section2 .button:hover {
     background-color: #111625; /* Cambio de color al pasar el mouse sobre el botón */
-    transform: scale(1.005, 1.005);
+    transform: scale(1.0025, 1.0025);
     /*transition: transform 0.25s;*/
 }
 
