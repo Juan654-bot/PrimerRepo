@@ -164,3 +164,13 @@ function closeMenu() {
     menuSlideout.style.width = '0';
     menuOverlay.style.display = 'none';
 }
+
+    // Mostrar el loader al inicio de la carga de la página
+    /*document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("loader").style.display = "block";
+      });
+  
+      // Ocultar el loader una vez que la página haya cargado completamente
+      window.addEventListener("load", function() {
+        document.getElementById("loader").style.display = "none";
+      });*/
