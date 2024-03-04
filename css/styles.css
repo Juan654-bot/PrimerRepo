@@ -185,21 +185,6 @@ main {
     border-radius: 5px; /* Aplica bordes redondeados */
 }
 
-/*.loader {
-    display: none;  Por defecto, ocultamos el loader 
-    width: 35px;
-    aspect-ratio: 1;
-    border: 3px solid #fff;
-    animation: l1 2s infinite;
-  }
-  @keyframes l1 {
-    0%   {border-radius:50% 50% 0   0  }
-    25%  {border-radius:0   50% 50% 0  }
-    50%  {border-radius:0   0   50% 50%}
-    75%  {border-radius:50% 0   0   50%}
-    100% {border-radius:50% 50% 0   0  }
-  }*/
-
 #section1 .content-wrapper h2 {
     margin-top: 0px;
     margin-bottom: 20px;
