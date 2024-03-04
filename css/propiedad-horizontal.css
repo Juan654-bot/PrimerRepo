@@ -128,15 +128,15 @@ nav ul li:hover .submenu {
 
 main {
     position: relative;
-    height: 100vh;
+    height: 1200px;
 }
 
 .image-container {
     position: absolute;
-    top: 20%;
+    top: 140px;
     left: 10%;
     width: 50%; /* O ajusta el tamaño de la imagen según lo desees */
-    height: 55%;
+    height: 400px;
     /* Aquí puedes agregar estilos para tu imagen de fondo */
     background-image: url('../img/fondo-areas.png');
     background-size: cover;
@@ -146,7 +146,7 @@ main {
 
 .text-container {
     position: absolute;
-    top: 62.5%;
+    top: 450px;
     right: 10%;
     width: 50%; /* O ajusta el tamaño del cuadro de texto según lo desees */
     padding: 35px;
@@ -190,6 +190,83 @@ main {
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
     z-index: -1;
     pointer-events: none;
+}
+
+.form-container {
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background-color: #111625f9;
+    padding: 30px;
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    font-size: 175%;
+    margin: 1px 7.5px;
+    color: #eee;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-group {
+    position: relative;
+    margin: 1px 7.5px;
+    flex: 1;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+/*.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #111625f9;
+}*/
+
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+    transform: translate(5px, -15px) scale(1.2);
+    background-color: #111625f9;
+    padding: 0 5px;
+    font-size: 0.7em;
+}
+
+.form-group label {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+button {
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: 'Roboto-Regular', sans-serif;
 }
 
 /* Estilos para el pie de página */
