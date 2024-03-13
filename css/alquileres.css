@@ -476,6 +476,24 @@ ul li a:hover {
         font-size: 0.95em;
     }     
 
+    .form-container {
+        padding: 25px;
+        bottom: 50px;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-container h2 {
+        margin: 0px 0px;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin: 2.5px 0px;
+    }
+
     #contacto {
         height: 400px;
         flex-direction: column;
