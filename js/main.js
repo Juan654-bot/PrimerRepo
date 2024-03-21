@@ -174,3 +174,16 @@ function closeMenu() {
       window.addEventListener("load", function() {
         document.getElementById("loader").style.display = "none";
       });*/
+
+      window.addEventListener('scroll', function() {
+        var section25 = document.getElementById('section25');
+        var position = section25.getBoundingClientRect().top;
+        var screenHeight = window.innerHeight;
+    
+        if (position < screenHeight) {
+            section25.classList.add('visible');
+        } else {
+            section25.classList.remove('visible');
+        }
+    });
+    

@@ -350,6 +350,148 @@ main {
     pointer-events: none;
 }
 
+#section25 {
+    height: 400px; /* Altura automática */
+    padding: 75px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e0e04e;
+}
+
+#section25 .content-wrapper25 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-20px); /* Mueve la sección hacia la izquierda */
+    transition: opacity 0.5s, transform 1.25s;
+}
+
+#section25.visible .content-wrapper25 {
+    opacity: 1;
+    transform: translateY(0); /* Restablece la posición original */
+}
+
+.image-container25 {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-20px); /* Mueve la imagen hacia la izquierda */
+    transition: opacity 0.5s, transform 1.25s;
+    padding-right: 125px;
+}
+
+.image-container25 img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 0.835%; /* Para hacer la imagen redonda */
+}
+
+.description-container25 {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(100px); /* Mueve la descripción hacia la derecha */
+    transition: opacity 0.5s, transform 1.25s;
+    text-align: left;
+}
+
+#section25.visible .image-container25,
+#section25.visible .description-container25 {
+    opacity: 1;
+    transform: translateY(0); /* Restablece la posición original */
+}
+
+.description-container25 h2 {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+.description-container25 p {
+    font-size: 0.5625em;
+    margin-bottom: 50px;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+.section27 {
+    height: 225px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+}
+
+.icon1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 145px; /* Ajusta el ancho según el tamaño de tu icono */
+    height: 120px; /* Ajusta la altura según el tamaño de tu icono */
+    background-image: url('/img/section27-1.png'); /* Ruta a tu icono */
+    background-size: cover;
+    opacity: 0.0625;
+}
+
+.icon2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 127.5px; /* Ajusta el ancho según el tamaño de tu icono */
+    height: 125px; /* Ajusta la altura según el tamaño de tu icono */
+    background-image: url('/img/section27-2.png'); /* Ruta a tu icono */
+    background-size: cover;
+    opacity: 0.0625;
+}
+
+.icon3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px; /* Ajusta el ancho según el tamaño de tu icono */
+    height: 90px; /* Ajusta la altura según el tamaño de tu icono */
+    background-image: url('/img/section27-3.png'); /* Ruta a tu icono */
+    background-size: cover;
+    opacity: 0.0625;
+}
+
+.icon4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px; /* Ajusta el ancho según el tamaño de tu icono */
+    height: 125px; /* Ajusta la altura según el tamaño de tu icono */
+    background-image: url('/img/section27-4.png'); /* Ruta a tu icono */
+    background-size: cover;
+    opacity: 0.0625;
+}
+
+.number {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111625f9;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #111625f9;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
 #section3 {
     height: 525px; /* Cambiar a altura automática */
     padding-top: 75px;
@@ -371,11 +513,11 @@ main {
 
 .image-container {
     flex: 1;
-    margin-right: 10%; /* Aumentar el margen derecho para mover la imagen más a la izquierda */
+    margin-left: 10%; /* Aumentar el margen derecho para mover la imagen más a la izquierda */
     overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
     z-index: -1;
     opacity: 0; /* Inicialmente, oculta la imagen */
-    transform: translateX(-20px); /* Inicialmente, mueve la imagen hacia arriba */
+    transform: translateX(20px); /* Inicialmente, mueve la imagen hacia arriba */
     transition: opacity 0.5s, transform 1s; /* Agrega una transición suave */
 }
 
@@ -408,7 +550,7 @@ main {
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(-20px);
     transition: opacity 0.5s, transform 1s;
     flex: 1;
 }

@@ -297,7 +297,7 @@ main {
 }
 
 .image-container img {
-    max-width: 52.5%;
+    max-width: 55%;
     height: auto;
     width: 100%;
     border-radius: 0.835%; /* Para hacer la imagen redonda */
