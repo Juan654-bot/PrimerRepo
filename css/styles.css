@@ -833,6 +833,24 @@ ul li a:hover {
         transform: translateX(0); /* Restablece la posición original */
     }
 
+    #section25 {
+        height: auto; /* Altura automática */
+        padding: 10%;
+    }
+
+    .image-container25{
+        display: none;
+    }
+
+    .section27{
+        height: auto;
+        display: block;
+    }
+
+    .item {
+        padding: 17.5%;
+    }
+
     #section3 {
         height: 375px;
     }
