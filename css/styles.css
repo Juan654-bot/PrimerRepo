@@ -415,6 +415,18 @@ main {
     font-family: 'Roboto-Light', sans-serif;
 }
 
+.iconU {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 375px; /* Ajusta el ancho según el tamaño de tu icono */
+    height: 375px; /* Ajusta la altura según el tamaño de tu icono */
+    background-image: url('/img/logo-ulpiano.png'); /* Ruta a tu icono */
+    background-size: cover;
+    opacity: 0.025;
+}
+
 .section27 {
     height: 225px;
     display: flex;
@@ -842,9 +854,14 @@ ul li a:hover {
         transform: translateY(100px); /* Mueve la descripción hacia la derecha */
     }
 
+    .iconU {
+        display: none;
+    }
+
     .section27{
         height: auto;
         display: block;
+        padding: 25px;
     }
 
     .item {
