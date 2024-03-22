@@ -265,7 +265,7 @@ main {
 }
 
 #section3 {
-    height: 300px; /* Altura automática */
+    height: 275px; /* Altura automática */
     padding: 75px 20px;
     display: flex;
     justify-content: center;
