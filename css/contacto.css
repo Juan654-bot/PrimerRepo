@@ -275,30 +275,44 @@ main {
 }
 
 #section3 {
-    height: 150px;
-    padding: 0px 0; /* Agrega un espacio interno a la sección */
+    height: 175px;
+    text-align: center;
     background-color: #e5e0e04e;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 #section3 .section-container {
-    max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 25px; /* Centra el contenido horizontalmente */
-}
-
-#section3 .column-center {
-    text-align: center; /* Centra el texto */
-}
-
-#section3 .column-center p {
-    font-size: 0.525em; /* Tamaño del texto */
-    color: #666; /* Color del texto */
-    line-height: 1.6; /* Altura de línea del texto */
-    text-align: left;
-    font-family: 'Roboto-Light', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 100px;
 }
 
 #section3 .text-container {
-    position: relative;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 0.625em;
+    margin-right: 5%; /* Ajusta el espacio entre el texto y el ícono */
+    margin-bottom: 10px;
+    color: #111625f9;
+}
+
+#section3 .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+#section3 .social-icons li {
+    display: inline-block;
+    margin-left: 10px; /* Ajusta el espacio entre los íconos */
+}
+
+#section3 .linkedin-icon {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
 }
 
 #section4 {
@@ -631,18 +645,8 @@ ul li a:hover {
         width: 127.5%;
     }
 
-    #section3 {
-        height: auto;
-    }
-
-    #section3 .section-container {
-        margin: auto; /* Centra el contenido horizontalmente */
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-    }
-
     #section3 .text-container {
-        margin: 25px;
+        font-size: 0.5em;
     }
 
     #section4 {
