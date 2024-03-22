@@ -278,8 +278,8 @@ main {
     height: 175px;
     text-align: center;
     background-color: #e5e0e04e;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 32.5px;
+    border-top-right-radius: 32.5px;
 }
 
 #section3 .section-container {
@@ -289,7 +289,7 @@ main {
     height: 100%;
     width: 100%;
     background-color: #f0f0f0;
-    border-radius: 50px;
+    border-radius: 32.5px;
 }
 
 #section3 .text-container {

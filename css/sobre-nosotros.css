@@ -189,7 +189,7 @@ main {
 }
 
 #section2 {
-    height: 650px;
+    height: 625px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
@@ -211,8 +211,6 @@ main {
 .vision {
     flex: 1;
     padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 /*.mission {
@@ -562,11 +560,6 @@ ul li a:hover {
 
     .container {
         display: block;
-    }
-
-    .mission,
-    .vision {
-    padding: 0;
     }
 
     .mission h2,
