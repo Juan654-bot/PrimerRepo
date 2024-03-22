@@ -422,7 +422,7 @@ main {
     transform: translate(0%, -50%);
     width: 375px; /* Ajusta el ancho según el tamaño de tu icono */
     height: 375px; /* Ajusta la altura según el tamaño de tu icono */
-    background-image: url('/img/logo-ulpiano.png'); /* Ruta a tu icono */
+    background-image: url('../img/logo-ulpiano.png'); /* Ruta a tu icono */
     background-size: cover;
     opacity: 0.025;
 }
@@ -450,7 +450,7 @@ main {
     transform: translate(-50%, -50%);
     width: 145px; /* Ajusta el ancho según el tamaño de tu icono */
     height: 120px; /* Ajusta la altura según el tamaño de tu icono */
-    background-image: url('/img/section27-1.png'); /* Ruta a tu icono */
+    background-image: url('../img/section27-1.png'); /* Ruta a tu icono */
     background-size: cover;
     opacity: 0.0625;
 }
@@ -462,7 +462,7 @@ main {
     transform: translate(-50%, -50%);
     width: 127.5px; /* Ajusta el ancho según el tamaño de tu icono */
     height: 125px; /* Ajusta la altura según el tamaño de tu icono */
-    background-image: url('/img/section27-2.png'); /* Ruta a tu icono */
+    background-image: url('../img/section27-2.png'); /* Ruta a tu icono */
     background-size: cover;
     opacity: 0.0625;
 }
@@ -474,7 +474,7 @@ main {
     transform: translate(-50%, -50%);
     width: 160px; /* Ajusta el ancho según el tamaño de tu icono */
     height: 90px; /* Ajusta la altura según el tamaño de tu icono */
-    background-image: url('/img/section27-3.png'); /* Ruta a tu icono */
+    background-image: url('../img/section27-3.png'); /* Ruta a tu icono */
     background-size: cover;
     opacity: 0.0625;
 }
@@ -486,7 +486,7 @@ main {
     transform: translate(-50%, -50%);
     width: 125px; /* Ajusta el ancho según el tamaño de tu icono */
     height: 125px; /* Ajusta la altura según el tamaño de tu icono */
-    background-image: url('/img/section27-4.png'); /* Ruta a tu icono */
+    background-image: url('../img/section27-4.png'); /* Ruta a tu icono */
     background-size: cover;
     opacity: 0.0625;
 }
