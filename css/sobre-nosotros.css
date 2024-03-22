@@ -189,7 +189,7 @@ main {
 }
 
 #section2 {
-    height: 625px;
+    height: 650px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
@@ -210,7 +210,9 @@ main {
 .mission,
 .vision {
     flex: 1;
-    padding: 0 0px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*.mission {
@@ -328,19 +330,33 @@ main {
 }
 
 #section4 {
-    height: 350px;
+    height: 500px;
     padding: 0px 0; /* Agrega un espacio interno a la sección */
     background-color: #e5e0e04e;
 }
 
 #section4 .section-container {
     max-width: 1000px; /* Ancho máximo del contenido */
-    margin: 60px; /* Centra el contenido horizontalmente */
+    margin: 25px; /* Centra el contenido horizontalmente */
 }
 
 #section4 .column-center {
     text-align: center; /* Centra el texto */
 }
+
+#section4 .container {
+    display: flex;
+}
+
+#section4 .mission,
+#section4 .vision {
+    flex: 1;
+    padding: 0 25px;
+}
+
+/*.mission {
+     border-right: 1px solid #ccc;  Línea divisoria entre las columnas 
+}*/
 
 #section4 .column-center p {
     font-size: 0.525em; /* Tamaño del texto */
@@ -348,34 +364,6 @@ main {
     line-height: 1.6; /* Altura de línea del texto */
     text-align: left;
     font-family: 'Roboto-Light', sans-serif;
-}
-
-#section4 .text-container {
-    position: relative;
-}
-
-#section4 .text-container::before{
-    content: '‟';
-    position: absolute;
-    font-size: 80px; /* Tamaño de las comillas */
-    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
-}
-
-#section4 .text-container::after {
-    content: '”';
-    position: absolute;
-    font-size: 80px; /* Tamaño de las comillas */
-    color: rgba(0, 0, 0, 0.142); /* Color translúcido */
-}
-
-#section4 .text-container::before {
-    top: -50px; /* Posición antes del texto */
-    left: -75px; /* Ajuste horizontal */
-}
-
-#section4 .text-container::after {
-    bottom: -75px; /* Posición después del texto */
-    right: -50px; /* Ajuste horizontal */
 }
 
 footer {
@@ -576,10 +564,15 @@ ul li a:hover {
         display: block;
     }
 
+    .mission,
+    .vision {
+    padding: 0;
+    }
+
     .mission h2,
-.vision h2 {
+    .vision h2 {
     margin-top: 25px;
-}
+    }
 
     #section2 .section-container {
         margin: auto; /* Centra el contenido horizontalmente */
@@ -622,26 +615,13 @@ ul li a:hover {
         height: auto;
     }
 
-    #section4 .section-container {
-        margin: auto; /* Centra el contenido horizontalmente */
-        margin-top: 5%;
-        margin-bottom: 5%;
+    #section4 .container {
+        display: block;
     }
 
-    #section4 .text-container {
-        margin: 35px;
-    }
-
-    #section4 .text-container::before {
-        top: -35px; /* Posición antes del texto */
-        left: -25px; /* Ajuste horizontal */
-        font-size: 50px; /* Tamaño de las comillas */
-    }
-    
-    #section4 .text-container::after {
-        bottom: -50px; /* Posición después del texto */
-        right: -20px; /* Ajuste horizontal */
-        font-size: 50px; /* Tamaño de las comillas */
+    #section4 .mission,
+    #section4 .vision {
+        padding: 0;
     }
 
     #contacto {
