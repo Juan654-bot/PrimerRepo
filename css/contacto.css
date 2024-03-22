@@ -273,6 +273,10 @@ main {
     pointer-events: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 #section3 {
     height: 150px;
     text-align: center;
